@@ -18,6 +18,8 @@ description: "Trecho da Oração aos Moços, de Rui Barbosa, sobre o hábito de 
 
 Durante quinze anos, este blog atuou predominantemente como um acervo ou uma biblioteca: as estantes foram sendo preenchidas, pouco a pouco, com as vozes de grandes pensadores. Mas os livros existem para algo maior do que repousar nas prateleiras. Há um tempo para recolher; há outro para transformar. Talvez o Singelas Referências esteja entrando justamente nesse segundo momento. Menos um arquivo de pensamentos alheios, mais um espaço onde essas ideias, depois de amadurecidas, possam florescer em reflexões próprias.
 
+<p class="datacao">Trecho publicado originalmente em 2011, no blog anterior. Nota acrescentada em julho de 2026.</p>
+
 </div>
 
 ---

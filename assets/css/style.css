@@ -189,6 +189,13 @@ a:hover { text-decoration-color: var(--realce); }
 
 .comentario p:last-child { margin-bottom: 0; }
 
+.comentario .datacao {
+  margin-top: 1.5rem;
+  color: var(--suave);
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
 .creditos {
   margin: 3rem 0 0;
   padding-top: 1.5rem;
