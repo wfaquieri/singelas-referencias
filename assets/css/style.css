@@ -168,6 +168,38 @@ a:hover { text-decoration-color: var(--realce); }
 
 .post-content img { max-width: 100%; height: auto; }
 
+/* ---------- comentário do editor ---------- */
+/* Em post de Referência o corpo é de outro autor. Isto marca onde falo eu. */
+
+.comentario {
+  margin: 3.5rem 0 0;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--tenue);
+}
+
+.comentario::before {
+  content: "Nota";
+  display: block;
+  margin-bottom: 0.75rem;
+  color: var(--realce);
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.comentario p:last-child { margin-bottom: 0; }
+
+.creditos {
+  margin: 3rem 0 0;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--tenue);
+  color: var(--suave);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.creditos p { margin: 0; }
+
 /* ---------- notas de rodapé ---------- */
 
 .footnotes {
