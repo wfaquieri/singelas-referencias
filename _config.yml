@@ -8,8 +8,8 @@ lang: pt-BR
 # Sem domínio (wfaquieri.github.io/singelas-referencias):
 #   baseurl: "/singelas-referencias"
 #   url: "https://wfaquieri.github.io"
-url: ""
-baseurl: ""
+url: "https://wfaquieri.github.io"
+baseurl: "/singelas-referencias"
 
 permalink: /:year/:month/:title/
 
