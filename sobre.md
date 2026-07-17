@@ -23,11 +23,3 @@ Contato: <a href="mailto:wfaquieri@gmail.com">wfaquieri@gmail.com</a>.
 </p>
 
 </div>
-
-<!--
-  A linha sobre o Espiritismo é opcional e a decisão é sua. O argumento para mantê-la
-  não é biográfico, é funcional: no artigo de epistemologia ela muda o que o leitor
-  está lendo. Crítica de fora e exame de dentro são atos diferentes, e sem essa linha
-  o leitor não sabe qual dos dois recebeu. Corte se discordar — o resto da nota
-  funciona sem ela.
--->
