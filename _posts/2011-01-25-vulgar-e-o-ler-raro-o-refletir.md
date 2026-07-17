@@ -14,4 +14,10 @@ description: "Trecho da Oração aos Moços, de Rui Barbosa, sobre o hábito de 
 >
 > Mas, senhores, os que madrugam no ler, convém madrugarem também no pensar. Vulgar é o ler, raro o refletir. O saber não está na ciência alheia, que se absorve, mas, principalmente, nas ideias próprias, que se geram dos conhecimentos absorvidos, mediante a transmutação por que passam, no espírito que os assimila. Um sabedor não é armário de sabedoria armazenada, mas transformador reflexivo de aquisições digeridas.
 
+<div class="comentario" markdown="1">
+
+Durante quinze anos, este blog atuou predominantemente como um acervo ou uma biblioteca: as estantes foram sendo preenchidas, pouco a pouco, com as vozes de grandes pensadores. Mas os livros existem para algo maior do que repousar nas prateleiras. Há um tempo para recolher; há outro para transformar. Talvez o Singelas Referências esteja entrando justamente nesse segundo momento. Menos um arquivo de pensamentos alheios, mais um espaço onde essas ideias, depois de amadurecidas, possam florescer em reflexões próprias.
+
+</div>
+
 ---
