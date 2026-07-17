@@ -22,7 +22,6 @@
   <nav class="site-nav">
     <a href="{{ '/' | relative_url }}">Textos</a>
     <a href="{{ '/sobre/' | relative_url }}">Sobre</a>
-    <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
   </nav>
 </header>
 
@@ -31,7 +30,7 @@
 </main>
 
 <footer class="site-footer">
-  <p>{{ site.author }}</p>
+  <p>{{ site.author }} · <a href="{{ '/feed.xml' | relative_url }}">RSS</a></p>
 </footer>
 
 </body>
