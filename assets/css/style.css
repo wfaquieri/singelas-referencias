@@ -1,0 +1,240 @@
+:root {
+  --texto: #1c1b19;
+  --suave: #6b6862;
+  --tenue: #ddd9d1;
+  --fundo: #fbfaf7;
+  --realce: #7a3b2e;
+  --medida: 34rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --texto: #e6e3dc;
+    --suave: #98938a;
+    --tenue: #35332e;
+    --fundo: #171614;
+    --realce: #d08c78;
+  }
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  padding: 0 1.5rem;
+  background: var(--fundo);
+  color: var(--texto);
+  font-family: Iowan Old Style, Palatino Linotype, Palatino, Georgia, serif;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  font-kerning: normal;
+  text-rendering: optimizeLegibility;
+}
+
+a { color: inherit; text-decoration-color: var(--tenue); text-underline-offset: 0.15em; }
+a:hover { text-decoration-color: var(--realce); }
+
+/* ---------- cabeçalho ---------- */
+
+.site-header {
+  max-width: var(--medida);
+  margin: 0 auto;
+  padding: 3.5rem 0 2.5rem;
+  text-align: center;
+}
+
+.site-title {
+  display: block;
+  font-size: 1.5rem;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.site-tagline {
+  margin: 0.4rem 0 0;
+  color: var(--suave);
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.site-nav {
+  margin-top: 1.5rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.site-nav a { margin: 0 0.6rem; color: var(--suave); text-decoration: none; }
+.site-nav a:hover { color: var(--realce); }
+
+/* ---------- lista ---------- */
+
+.lista {
+  max-width: var(--medida);
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.lista-item {
+  padding: 2rem 0;
+  border-top: 1px solid var(--tenue);
+}
+
+.lista-meta {
+  margin: 0;
+  color: var(--suave);
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.lista-rotulo::after { content: " ·"; }
+
+.lista-titulo {
+  margin: 0.4rem 0 0;
+  font-size: 1.35rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.lista-titulo a { text-decoration: none; }
+.lista-titulo a:hover { color: var(--realce); }
+
+.lista-resumo { margin: 0.5rem 0 0; color: var(--suave); font-size: 1rem; }
+
+/* ---------- texto ---------- */
+
+.post, .pagina {
+  max-width: var(--medida);
+  margin: 0 auto;
+}
+
+.post-header { padding-bottom: 2rem; }
+
+.post-kicker {
+  margin: 0;
+  color: var(--realce);
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.post-title, .pagina h1 {
+  margin: 0.5rem 0 0;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+
+.post-meta {
+  margin: 0.6rem 0 0;
+  color: var(--suave);
+  font-size: 0.85rem;
+}
+
+.lead { color: var(--suave); font-style: italic; }
+
+.post-content h2 {
+  margin: 3rem 0 0.75rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.post-content p { margin: 0 0 1.4rem; }
+
+.post-content blockquote {
+  margin: 2rem 0;
+  padding-left: 1.25rem;
+  border-left: 2px solid var(--tenue);
+  color: var(--suave);
+  font-style: italic;
+}
+
+.post-content blockquote p:last-child { margin-bottom: 0; }
+
+.post-content strong { font-weight: 600; }
+
+.post-content hr {
+  margin: 3rem auto;
+  width: 4rem;
+  border: 0;
+  border-top: 1px solid var(--tenue);
+}
+
+.post-content img { max-width: 100%; height: auto; }
+
+/* ---------- notas de rodapé ---------- */
+
+.footnotes {
+  margin-top: 3.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--tenue);
+  color: var(--suave);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.footnotes ol { padding-left: 1.2rem; }
+.footnotes li { margin-bottom: 0.8rem; }
+
+/* O kramdown já envolve a chamada num <sup>; não superscrever de novo. */
+sup[id^="fnref"] { line-height: 0; }
+
+a.footnote {
+  padding: 0 0.1em;
+  color: var(--realce);
+  text-decoration: none;
+}
+
+a.reversefootnote { text-decoration: none; }
+
+/* ---------- rodapé do texto ---------- */
+
+.post-footer {
+  margin-top: 3.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--tenue);
+}
+
+.nota-autor {
+  margin: 0;
+  color: var(--suave);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.post-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: var(--medida);
+  margin: 3rem auto 0;
+  font-size: 0.9rem;
+}
+
+.post-nav a { color: var(--suave); text-decoration: none; }
+.post-nav a:hover { color: var(--realce); }
+.post-nav .next { margin-left: auto; text-align: right; }
+
+/* ---------- rodapé do site ---------- */
+
+.site-footer {
+  max-width: var(--medida);
+  margin: 5rem auto 0;
+  padding: 2rem 0 3rem;
+  border-top: 1px solid var(--tenue);
+  color: var(--suave);
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+@media (max-width: 34rem) {
+  body { font-size: 1.05rem; }
+  .post-title, .pagina h1 { font-size: 1.6rem; }
+  .site-header { padding-top: 2.5rem; }
+}

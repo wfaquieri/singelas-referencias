@@ -1,0 +1,41 @@
+---
+layout: post
+title: "Vulgar é o ler, raro o refletir"
+date: 2026-07-16 09:00:00 -0300
+categories: referencias
+fonte: "Rui Barbosa, <em>Oração aos Moços</em>, 1921"
+resumo: "Rui Barbosa sobre madrugar no ler e madrugar no pensar — e sobre a diferença entre um armário e um transformador."
+description: "Trecho da Oração aos Moços, de Rui Barbosa, sobre o hábito de madrugar e a diferença entre absorver ciência alheia e gerar ideias próprias."
+---
+
+> Ao que devo, sim, o mais dos frutos do meu trabalho, a relativa exuberância de sua fertilidade, a parte produtiva e durável da sua safra, é às minhas madrugadas. Menino ainda, assim que entrei ao colégio, alvidrei eu mesmo a conveniência desse costume, e daí avante o observei, sem cessar, toda a vida. Eduquei nele o meu cérebro, a ponto de espertar exatamente à hora que comigo mesmo assentava ao dormir. Sucedia, muito amiúde, encetar eu a minha solitária banca de estudo à uma ou duas da antemanhã. Muitas vezes me mandava logo após à cama, daquelas amadas lucubrações, as de que me lembro com saudade mais deleitosa e estranhável.
+>
+> Tenho, ainda hoje, convicção de que nessa observância persistente está o segredo feliz, não só das minhas primeiras vitórias no trabalho, mas de quantas vantagens alcancei levar aos meus concorrentes, em todo o andar dos anos, até a velhice. Muito há que já não subtraio tanto às horas da cama, para acrescentar às do estudo. Mas o sistema ainda perdura, bem que largamente cerceado nas antigas imoderações. Até agora, nunca o sol deu comigo deitado, e, ainda hoje, um dos meus raros e modestos desvanecimentos é o de ser grande madrugador, madrugador impenitente.
+>
+> Mas, senhores, os que madrugam no ler, convém madrugarem também no pensar. Vulgar é o ler, raro o refletir. O saber não está na ciência alheia, que se absorve, mas, principalmente, nas ideias próprias, que se geram dos conhecimentos absorvidos, mediante a transmutação por que passam, no espírito que os assimila. Um sabedor não é armário de sabedoria armazenada, mas transformador reflexivo de aquisições digeridas.
+
+---
+
+<!--
+  RASCUNHO DO COMENTÁRIO — troque pelo seu.
+
+  Deixei curto de propósito e não vou fingir que é seu. Se for manter alguma coisa,
+  que seja a observação do meio: este trecho é a regra da casa. Um blog que reproduz
+  texto alheio é um armário até o momento em que o dono digere o que guardou — e o
+  seu tagline já dizia isso desde 2013, quando pôs "pensada" no fim de "ouvida,
+  vista, lida".
+-->
+
+As duas primeiras partes do trecho são as citadas: o hábito da madrugada, a disciplina
+de uma vida inteira. É o Rui Barbosa que se costuma trazer para epígrafe de palestra.
+
+A terceira parte é a que interessa, e quase nunca vem junto. Depois de três parágrafos
+elogiando o próprio hábito de ler, ele vira contra o leitor — inclusive contra si:
+*vulgar é o ler, raro o refletir*. Não adianta madrugar sobre livro alheio. Ciência
+absorvida não é saber; vira saber quando passa pela transmutação de quem a recebeu.
+
+E então a imagem que fecha tudo: **armário de sabedoria armazenada** contra
+**transformador reflexivo de aquisições digeridas**. É de 1921 e não envelheceu um dia.
+
+Este trecho é a regra desta casa. Um caderno que só guarda texto de outro é um armário.
+O que o salva é o parágrafo que vem depois da citação.

@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<ul class="lista">
+{% for post in site.posts %}
+  {% assign m = post.date | date: "%-m" | minus: 1 %}
+  {% assign cat = post.categories | first %}
+  <li class="lista-item">
+    <p class="lista-meta">
+      {% if cat %}<span class="lista-rotulo">{{ site.rotulos[cat] | default: cat }}</span>{% endif %}
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d" }} de {{ site.meses[m] }} de {{ post.date | date: "%Y" }}</time>
+    </p>
+    <h2 class="lista-titulo"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+    {% if post.resumo %}<p class="lista-resumo">{{ post.resumo }}</p>{% endif %}
+  </li>
+{% endfor %}
+</ul>

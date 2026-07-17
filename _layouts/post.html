@@ -1,0 +1,34 @@
+---
+layout: default
+---
+{% assign m = page.date | date: "%-m" | minus: 1 %}
+{% assign cat = page.categories | first %}
+
+<article class="post">
+
+  <header class="post-header">
+    {% if cat %}<p class="post-kicker">{{ site.rotulos[cat] | default: cat }}</p>{% endif %}
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d" }} de {{ site.meses[m] }} de {{ page.date | date: "%Y" }}</time>
+      {% if page.fonte %} · {{ page.fonte }}{% endif %}
+    </p>
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+  <footer class="post-footer">
+    <p class="nota-autor">
+      {{ site.author }} é cientista de dados e doutorando em Ciência da Computação (UFF).
+      Currículo em <a href="https://wfaquieri.github.io/">wfaquieri.github.io</a>.
+    </p>
+  </footer>
+
+</article>
+
+<nav class="post-nav">
+  {% if page.previous %}<a class="prev" href="{{ page.previous.url | relative_url }}">← {{ page.previous.title }}</a>{% endif %}
+  {% if page.next %}<a class="next" href="{{ page.next.url | relative_url }}">{{ page.next.title }} →</a>{% endif %}
+</nav>

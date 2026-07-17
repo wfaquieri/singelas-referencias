@@ -1,0 +1,52 @@
+title: Singelas Referências
+tagline: Registro escrito de coisa ouvida, vista, lida ou pensada
+author: Winicius B. Faquieri
+email: wfaquieri@gmail.com
+lang: pt-BR
+
+# Domínio próprio: deixe baseurl vazio e url com o domínio.
+# Sem domínio (wfaquieri.github.io/singelas-referencias):
+#   baseurl: "/singelas-referencias"
+#   url: "https://wfaquieri.github.io"
+url: ""
+baseurl: ""
+
+permalink: /:year/:month/:title/
+
+markdown: kramdown
+kramdown:
+  footnote_backlink: "↩"
+  smart_quotes: ["apos", "apos", "ldquo", "rdquo"]
+
+plugins:
+  - jekyll-feed
+
+feed:
+  path: feed.xml
+
+# Rótulos das duas naturezas de post.
+# apontamentos -> texto meu
+# referencias  -> texto de outro autor, com trecho e comentário
+rotulos:
+  apontamentos: Apontamento
+  referencias: Referência
+
+meses:
+  - janeiro
+  - fevereiro
+  - março
+  - abril
+  - maio
+  - junho
+  - julho
+  - agosto
+  - setembro
+  - outubro
+  - novembro
+  - dezembro
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
