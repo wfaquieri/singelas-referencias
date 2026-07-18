@@ -189,7 +189,7 @@ a:hover { text-decoration-color: var(--realce); }
 
 .comentario p:last-child { margin-bottom: 0; }
 
-.comentario .datacao {
+.datacao {
   margin-top: 1.5rem;
   color: var(--suave);
   font-size: 0.8rem;
