@@ -23,14 +23,18 @@ layout: default
     Nota de autor só em texto meu. Em Referência, o texto é de outro — assinar embaixo
     dele soa como reivindicação de autoria. A origem já está no cabeçalho, em `fonte`.
   {% endcomment %}
-  {% if cat == 'apontamentos' %}
   <footer class="post-footer">
+    {% if cat == 'apontamentos' %}
     <p class="nota-autor">
       {{ site.author }} é cientista de dados e doutorando em Ciência da Computação (UFF).
       Currículo em <a href="https://wfaquieri.github.io/">wfaquieri.github.io</a>.
     </p>
+    {% endif %}
+    <p class="resposta">
+      Comentários e discordâncias:
+      <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+    </p>
   </footer>
-  {% endif %}
 
 </article>
 

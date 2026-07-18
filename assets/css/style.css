@@ -247,6 +247,14 @@ a.reversefootnote { text-decoration: none; }
   line-height: 1.6;
 }
 
+.resposta {
+  margin: 1rem 0 0;
+  color: var(--suave);
+  font-size: 0.9rem;
+}
+
+.post-footer .nota-autor + .resposta { margin-top: 0.75rem; }
+
 .post-nav {
   display: flex;
   justify-content: space-between;
