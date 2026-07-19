@@ -11,13 +11,19 @@ description: "Uma leitura histórica do texto político de Léon Denis: o que o 
 
 ## Contexto histórico
 
-O texto de Léon Denis costuma ser lido hoje como uma crítica ao Estado de bem-estar social. Essa leitura, porém, ignora o contexto histórico em que ele escreveu. Ao mesmo tempo, suas previsões podem ser confrontadas com a experiência política do século XX, permitindo distinguir aquilo que a história confirmou daquilo que ela relativizou.
+O texto de Léon Denis costuma ser lido hoje como uma crítica ao Estado de bem-estar social. Essa leitura ignora o contexto histórico em que ele escreveu — e desperdiça o que o trecho tem de raro: é uma previsão datada, escrita antes de 1914, num capítulo intitulado **"A Missão do Século XX"**. O século XX aconteceu. É possível conferir.
 
-Este trecho tem uma previsão datada. Denis escreveu antes de 1914, num capítulo intitulado **"A Missão do Século XX"**. E o século XX já aconteceu. Sendo assim, é possível verificar suas previsões à luz da história.
+Denis escreve na Terceira República, no auge da ascensão socialista francesa, e o alvo dele está nomeado logo na abertura:
 
-Denis escreve na Terceira República, no auge da ascensão socialista francesa. No contexto francês de 1911, grande parte do debate socialista girava em torno da coletivização dos meios de produção e da crítica à propriedade privada. Não significa seguro-desemprego, previdência pública ou salário mínimo. Ler a crítica de Denis como se aplicando ao Estado de bem-estar social contemporâneo é anacronismo.
+> "Os destinos da ciência materialista e os do Socialismo atual estão em correlação; inspiram-se pelos mesmos métodos e pelas mesmas fórmulas."
 
-Outro detalhe histórico importante: Denis escrevia antes de conhecer (i) a social-democracia escandinava, (ii) o Estado de bem-estar do pós-guerra e (iii) a consolidação das democracias constitucionais modernas. Na época dele, o debate era muito marcado por marxismo revolucionário, anarquismo, sindicalismo revolucionário e forte anticlericalismo francês. Isso ajuda a entender por que ele enxergava o socialismo sobretudo em sua vertente revolucionária.
+No contexto francês de 1911, grande parte do debate socialista girava em torno da coletivização dos meios de produção e da crítica à propriedade privada. Socialismo, ali, não significa seguro-desemprego, previdência pública ou salário mínimo. O debate da época era marcado por marxismo revolucionário, anarquismo, sindicalismo revolucionário e forte anticlericalismo francês — o que ajuda a entender por que ele enxergava o socialismo sobretudo em sua vertente revolucionária.
+
+Convém, no entanto, registrar o que corta na direção contrária. Uma frase do trecho não é sobre coletivização, e sim sobre política social concreta:
+
+> "Não é também a regulamentação do trabalho, pela coletividade, que dará ao proletariado a felicidade que os utopistas do dia fazem luzir aos seus olhos."
+
+Aqui Denis vai além da crítica ao coletivismo revolucionário e alcança a legislação trabalhista — que é, esta sim, ancestral direta do Estado de bem-estar. O anacronismo, portanto, não isenta o texto inteiro: isenta o essencial do argumento, não cada uma de suas linhas.
 
 ## A posição política de Denis
 
@@ -25,31 +31,37 @@ Denis é herdeiro das ideias da Revolução Francesa de 1789, lembrada pelo lema
 
 Em um primeiro momento, a Revolução defendia, principalmente, a liberdade individual, os direitos civis, o fim dos privilégios da nobreza, a igualdade perante a lei e a livre iniciativa do cidadão. Por isso ele escreve:
 
-> "o próprio princípio da Revolução... essencialmente individualista"
+> "É preciso convir, a democracia socialista de nossos dias está em desacordo com o próprio princípio da Revolução. Esta era essencialmente individualista; queria dar a cada um a livre iniciativa de seus atos pessoais."
 
 Ou seja, Denis entende que o objetivo original da Revolução era libertar o indivíduo do poder absoluto do rei, da Igreja e da aristocracia, e não colocá-lo sob o controle de um Estado coletivo.
 
 ## As previsões
 
-Sobre suas previsões para o século XX, Denis acertou em parte.
+Denis acertou em parte, e a parte que acertou é sombria. Sua previsão é explícita:
 
-Onde o coletivismo foi levado às últimas consequências, ao olharmos retrospectivamente para a União Soviética de Stalin, a China de Mao, o Camboja de Pol Pot ou a Coreia do Norte, realmente houve situações em que o indivíduo foi subordinado ao Estado e ao partido. Nesses casos, falar em **"absorção da pessoa no todo social"** não parece exagerado.
+> "Vai ao coletivismo, isto é, à negação da pessoa humana e à sua absorção no todo social."
 
-Ou seja, Denis identificou um risco real que efetivamente se materializou em alguns regimes do século XX que aboliram a propriedade em nome da igualdade de fato.
+Ao olharmos retrospectivamente para a União Soviética de Stalin, a China de Mao, o Camboja de Pol Pot ou a Coreia do Norte, realmente houve situações em que o indivíduo foi subordinado ao Estado e ao partido. Nesses casos, falar em "absorção da pessoa no todo social" não parece exagerado: Denis identificou um risco real, que se materializou em regimes que aboliram a propriedade em nome da igualdade de fato.
 
-Ao mesmo tempo, o século XX também produziu outra experiência política. Países como Suécia, Noruega, Dinamarca, Alemanha, Holanda e outros ampliaram a proteção social, regulamentaram o trabalho e redistribuíram renda sem abolir as liberdades civis.
+Mas o século XX produziu também outra experiência, que ele não podia conhecer. Suécia, Noruega, Dinamarca, Alemanha, Holanda e outros ampliaram a proteção social, regulamentaram o trabalho e redistribuíram renda sem abolir as liberdades civis. A "regulamentação do trabalho, pela coletividade" foi adotada em larga escala sem produzir a absorção que ele temia.
 
 ## A ressalva
 
-Porém, cabe aqui uma ressalva.
+Porém, cabe aqui uma ressalva, e ela está na própria letra do texto:
 
-Denis usa a expressão **"tende a"**. Ele não escreve "necessariamente produzirá". Muitos autores do século XIX e início do século XX (como Tocqueville, Lord Acton e, mais tarde, Hayek) utilizavam argumentos semelhantes: não afirmavam que toda ampliação do Estado levaria inevitavelmente ao totalitarismo, mas que certas ideias continham riscos que poderiam se desenvolver sob determinadas condições.
+> "tende a nivelar as individualidades fortes, e a passar logicamente da igualdade de direito à igualdade de fato."
+
+Denis escreve **"tende a"** — não "necessariamente produzirá". Muitos autores do século XIX e início do século XX, como Tocqueville e, mais tarde, Hayek, utilizavam argumentos semelhantes: não afirmavam que toda ampliação do Estado levaria inevitavelmente ao totalitarismo, mas que certas ideias continham riscos que poderiam se desenvolver sob determinadas condições.
 
 ## Conclusão
 
-Em resumo, Denis identificou corretamente um risco, que se concretizou em alguns regimes. Porém, o século XX demonstrou que algumas sociedades conseguiram combinar proteção social, economia de mercado e liberdade política sem seguir o caminho que ele temia.
+O século XX rodou os dois experimentos. Um deu razão a Denis; o outro mostrou que proteção social, economia de mercado e liberdade política podem conviver sem seguir o caminho que ele temia.
 
-Denis não opõe liberdade à fraternidade: exige as duas, em equilíbrio.
+O que permanece de pé é a exigência do fecho:
+
+> "O homem livre na terra livre! Tal será o ideal social do futuro. Mas é preciso ter em conta a necessidade preliminar de outro fator — a **Fraternidade** — que só pela harmonia pode estar em equilíbrio com a liberdade."
+
+Denis não opõe liberdade à fraternidade: exige as duas, em equilíbrio. É uma exigência bem mais difícil do que a leitura que costuma se fazer dele.
 
 ## Denis, Kardec e Hume
 
