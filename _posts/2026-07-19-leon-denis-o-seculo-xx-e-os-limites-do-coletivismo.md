@@ -62,23 +62,3 @@ O que permanece de pé é a exigência do fecho:
 > "O homem livre na terra livre! Tal será o ideal social do futuro. Mas é preciso ter em conta a necessidade preliminar de outro fator — a **Fraternidade** — que só pela harmonia pode estar em equilíbrio com a liberdade."
 
 Denis não opõe liberdade à fraternidade: exige as duas, em equilíbrio. É uma exigência bem mais difícil do que a leitura que costuma se fazer dele.
-
-## Denis, Kardec e Hume
-
-Vale observar que dois argumentos distintos aparecem nesse debate.
-
-O primeiro é a ideia de que as diferenças naturais entre os indivíduos tornam inviável uma igualdade absoluta de resultados. Esse argumento aparece tanto em Léon Denis quanto em David Hume.
-
-O segundo é a afirmação de que essas diferenças impõem maiores deveres aos mais fortes, princípio expresso na resposta da questão 685 de *O Livro dos Espíritos*. Assim, liberdade e fraternidade aparecem como princípios complementares, e não excludentes.
-
-> **"Se os homens são iguais em direito, serão sempre desiguais em inteligência, faculdades e moralidade."**
->
-> — **Léon Denis**
-
-> **"Tornem-se as posses iguais e as diferenças de habilidade, diligência e indústria (...) não demorarão a desfazer a igualdade."**
->
-> — **David Hume**, *An Enquiry Concerning the Principles of Morals*
-
-> **"O forte deve trabalhar para o fraco. Não tendo este família, a sociedade deve fazer as vezes desta. É a lei de caridade."**
->
-> — **Allan Kardec**, *O Livro dos Espíritos*, questão 685
