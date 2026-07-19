@@ -3,7 +3,7 @@ layout: post
 title: "Léon Denis, o século XX e os limites do coletivismo"
 date: 2026-07-19
 categories: apontamentos
-resumo: "Denis escreveu uma previsão datada, antes de 1914. O século XX aconteceu — e confirmou uma parte do que ele temia, enquanto relativizava outra."
+resumo: "Denis escreveu uma previsão datada, antes de 1914. O século XX aconteceu e confirmou uma parte do que ele temia, enquanto relativizava outra."
 description: "Uma leitura histórica do texto político de Léon Denis: o que o século XX confirmou de suas previsões, o que relativizou, e por que lê-lo como crítica ao Estado de bem-estar é anacronismo."
 ---
 
@@ -11,7 +11,7 @@ description: "Uma leitura histórica do texto político de Léon Denis: o que o 
 
 ## Contexto histórico
 
-O texto de Léon Denis costuma ser lido hoje como uma crítica ao Estado de bem-estar social. Essa leitura ignora o contexto histórico em que ele escreveu — e desperdiça o que o trecho tem de raro: é uma previsão datada, escrita antes de 1914, num capítulo intitulado **"A Missão do Século XX"**. O século XX aconteceu. É possível conferir.
+O texto de Léon Denis exige um cuidado de leitura. Interpretá-lo como uma crítica ao Estado de bem-estar social contemporâneo ignora o contexto histórico em que foi escrito. Ao mesmo tempo, suas previsões podem ser confrontadas com a experiência política do século XX, permitindo distinguir aquilo que a história confirmou daquilo que ela relativizou.
 
 Denis escreve na Terceira República, no auge da ascensão socialista francesa, e o alvo dele está nomeado logo na abertura:
 
