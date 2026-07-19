@@ -4,7 +4,7 @@ title: "O problema político"
 date: 2012-06-07
 categories: referencias
 fonte: "Léon Denis, <em>O Grande Enigma</em>, Parte III, cap. XVI — “A Missão do Século XX”"
-resumo: "Léon Denis sobre democracia, coletivismo e a igualdade de direito que não é igualdade de fato — e sobre a fraternidade como condição da liberdade."
+resumo: "Léon Denis sobre democracia, coletivismo e a igualdade de direito que não é igualdade de fato."
 description: "Trecho de O Grande Enigma, de Léon Denis, sobre o problema político, o coletivismo e a fraternidade como contrapeso da liberdade."
 ---
 
@@ -20,4 +20,12 @@ description: "Trecho de O Grande Enigma, de Léon Denis, sobre o problema polít
 >
 > O homem livre na terra livre! Tal será o ideal social do futuro. Mas é preciso ter em conta a necessidade preliminar de outro fator — a **Fraternidade** — que só pela harmonia pode estar em equilíbrio com a liberdade.
 
-<p class="datacao">Trecho publicado originalmente em 2012, no blog anterior.</p>
+<div class="comentario" markdown="1">
+
+Denis escreveu isto antes de 1914, num capítulo chamado "A Missão do Século XX". O século XX aconteceu, e é possível conferir a previsão: uma parte dela se cumpriu de forma sombria, outra não.
+
+Comentei o trecho em <a href="{{ '/2026/07/leon-denis-o-seculo-xx-e-os-limites-do-coletivismo/' | relative_url }}">Léon Denis, o século XX e os limites do coletivismo</a>.
+
+<p class="datacao">Trecho publicado originalmente em 2012, no blog anterior. Nota acrescentada em julho de 2026.</p>
+
+</div>
