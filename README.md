@@ -99,12 +99,14 @@ rodapé.
 
 ### Direito autoral
 
-Autor morto há mais de 70 anos: domínio público, reproduza à vontade
-(Rui Barbosa †1923, Victor Hugo †1885, Bach †1750).
+**Autor morto há mais de 70 anos:** domínio público. Reproduza à vontade.
 
-Autor vivo — Alberto Oliva, por exemplo: **trecho + comentário seu**, com autor e
+**Autor vivo ou morto há menos de 70 anos:** trecho + comentário seu, com autor e
 origem indicados (LDA 9.610/98, art. 46, III). Texto integral, só com autorização
-por escrito.
+por escrito — e guarde o e-mail.
+
+Atenção às **traduções**: o prazo conta a partir da morte do tradutor, não do autor.
+Um original em domínio público pode ter tradução protegida.
 
 ## Rodar localmente (opcional)
 
