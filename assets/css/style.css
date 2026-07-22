@@ -1,20 +1,11 @@
 :root {
-  --texto: #1c1b19;
-  --suave: #6b6862;
-  --tenue: #ddd9d1;
-  --fundo: #fbfaf7;
-  --realce: #7a3b2e;
+  color-scheme: dark;
+  --texto: #e6e3dc;
+  --suave: #98938a;
+  --tenue: #35332e;
+  --fundo: #171614;
+  --realce: #d08c78;
   --medida: 34rem;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --texto: #e6e3dc;
-    --suave: #98938a;
-    --tenue: #35332e;
-    --fundo: #171614;
-    --realce: #d08c78;
-  }
 }
 
 *, *::before, *::after { box-sizing: border-box; }
