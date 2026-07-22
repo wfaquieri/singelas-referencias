@@ -14,19 +14,19 @@ description: "Trecho de Na Seara do Mestre, de Vinícius, sobre a desproporção
 >
 > Por misericórdia nos foi outorgada a oportunidade de desempenharmos certas tarefas de pouca monta dentro da imensidade daquele labor, de acordo com as nossas restritas e acanhadas possibilidades. Dizemos por misericórdia, porque se trata de facultar aos devedores os meios de ressarcirem seus débitos atrasados.
 >
-> **A parte que toca a cada um de nós pode ser comparada às sombras de um grande quadro. Tomar, portanto, esta parte ínfima como sendo o quadro completo é simplesmente irrisório.** Demais, essa pretensão pode inutilizar-nos, tornando-nos incapazes de fazer o mínimo de que fomos incumbidos. Seremos, nessa hipótese, substituídos, talvez com vantagem para a consecução da obra, e grande desproveito para nós.
+> A parte que toca a cada um de nós pode ser comparada às sombras de um grande quadro. Tomar, portanto, esta parte ínfima como sendo o quadro completo é simplesmente irrisório. Demais, essa pretensão pode inutilizar-nos, tornando-nos incapazes de fazer o mínimo de que fomos incumbidos. Seremos, nessa hipótese, substituídos, talvez com vantagem para a consecução da obra, e grande desproveito para nós.
 >
 > Não devemos supor que temos sobre nossos ombros o peso de responsabilidades que vão muito além das nossas forças. Deus não se equivoca nos programas que traça. Não nos exaltemos para que não sejamos humilhados.
 >
 > Consideremo-nos como obreiros de baixa classe, que realmente somos, cumprindo-nos sempre agir na esfera que nos foi determinada pelos legítimos executadores da majestosa edificação.
 >
-> **Não nos julguemos indispensáveis, nem mesmo necessários**, por isso que das próprias pedras Deus pode suscitar filhos de Abraão. Outrossim, não computemos o tempo em nosso abono, porque há últimos que serão primeiros e primeiros que se tornarão derradeiros. Tampouco consideremos o vulto do que temos feito, porquanto **o valor das nossas obras não se aquilatará pela quantidade, mas pela qualidade.**
+> **Não nos julguemos indispensáveis, nem mesmo necessários**, por isso que das próprias pedras Deus pode suscitar filhos de Abraão. Outrossim, não computemos o tempo em nosso abono, porque há últimos que serão primeiros e primeiros que se tornarão derradeiros. Tampouco consideremos o vulto do que temos feito, porquanto o valor das nossas obras não se aquilatará pela quantidade, mas pela qualidade.
 >
-> Lembremo-nos da lição que nos oferece a Parábola dos trabalhadores das diversas horas do dia. A balança da Divina Justiça não acusa o peso material das nossas realizações, porém registra, com a máxima exação, a essência dos nossos feitos, isto é, os fatores ou motivos que os determinaram. **A originalidade daquela balança está em desprezar o que se vê, para considerar o que não se vê.** Se assim não fora, só os argentários lograriam realizar obras meritórias.
+> Lembremo-nos da lição que nos oferece a Parábola dos trabalhadores das diversas horas do dia. A balança da Divina Justiça não acusa o peso material das nossas realizações, porém registra, com a máxima exação, a essência dos nossos feitos, isto é, os fatores ou motivos que os determinaram. A originalidade daquela balança está em desprezar o que se vê, para considerar o que não se vê. Se assim não fora, só os argentários lograriam realizar obras meritórias.
 >
-> Identifiquemo-nos, cada um de nós, com a parcela mínima do trabalho que nos foi determinado. **Se devemos carregar a caçamba de reboco, não queiramos levantar colunas e erguer capitéis e pilastras.** Melhor faz, e mais mérito tem, o servente humilde que não se descuida de seu mister, do que o oficial cuja imperícia e leviandade se tornam motivo de escândalo para todos. Transportemos a nossa pedra com boa vontade, sem presunção, pois o Supremo Arquiteto tomará na devida conta a nossa perseverança.
+> Identifiquemo-nos, cada um de nós, com a parcela mínima do trabalho que nos foi determinado. Se devemos carregar a caçamba de reboco, não queiramos levantar colunas e erguer capitéis e pilastras. Melhor faz, e mais mérito tem, o servente humilde que não se descuida de seu mister, do que o oficial cuja imperícia e leviandade se tornam motivo de escândalo para todos. Transportemos a nossa pedra com boa vontade, sem presunção, pois o Supremo Arquiteto tomará na devida conta a nossa perseverança.
 >
-> Há obreiros humildes que passaram despercebidos aos olhos dos homens e hoje desfrutam, no Além, posição de destaque, pois "aqueles que me foram fiéis no pouco, o muito lhes será confiado", conforme ensina a Parábola dos talentos. Outros há, cujos feitos o mundo encarece, completamente desconhecidos nos tabernáculos eternos. **Os olhos de Deus não veem como os humanos.** A sua potência visual penetra o âmago e os recônditos mais ocultos, enquanto a dos homens só descortina as exterioridades, sempre ilusórias e enganadoras.
+> Há obreiros humildes que passaram despercebidos aos olhos dos homens e hoje desfrutam, no Além, posição de destaque, pois "aqueles que me foram fiéis no pouco, o muito lhes será confiado", conforme ensina a Parábola dos talentos. Outros há, cujos feitos o mundo encarece, completamente desconhecidos nos tabernáculos eternos. Os olhos de Deus não veem como os humanos. A sua potência visual penetra o âmago e os recônditos mais ocultos, enquanto a dos homens só descortina as exterioridades, sempre ilusórias e enganadoras.
 >
 > Muito recebe o que nada espera. Portanto, tomemos na merecida conta a seguinte advertência do Mestre:
 >
@@ -35,7 +35,7 @@ description: "Trecho de Na Seara do Mestre, de Vinícius, sobre a desproporção
 >
 > > **"Ninguém pense de si mesmo mais do que convém."**
 >
-> Vigiemos e oremos, para que não se enfunem as velas da vaidade, arrastando o nosso barco para o sorvedouro. Não nos iludamos com as aparências. **Toda obra que se cristaliza no personalismo já está condenada, porque importa no cabouqueiro arvorado em arquiteto.**
+> Vigiemos e oremos, para que não se enfunem as velas da vaidade, arrastando o nosso barco para o sorvedouro. Não nos iludamos com as aparências. Toda obra que se cristaliza no personalismo já está condenada, porque importa no cabouqueiro arvorado em arquiteto.
 >
 > Afastemos, pois, da nossa mente, a falsa e perigosa ideia de sermos dirigentes, quando realmente devemos ser os dirigidos.
 >

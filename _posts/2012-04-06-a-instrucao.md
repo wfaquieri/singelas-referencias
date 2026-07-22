@@ -25,18 +25,18 @@ description: "Trecho do prefácio de Alvorada Cristã, por Emmanuel, sobre a dif
 >
 > Marat, o demagogo sanguinário, era jornalista de mérito e intelectual de renome.
 >
-> **Todos os fazedores de guerra, ditadores e revolucionários, antigos e modernos, foram incubados no convívio de professores ilustres, de páginas científicas, de livros técnicos ou de universidades famosas.**
+> Todos os fazedores de guerra, ditadores e revolucionários, antigos e modernos, foram incubados no convívio de professores ilustres, de páginas científicas, de livros técnicos ou de universidades famosas.
 >
 > **Razão sem luz pode transformar-se em simples cálculo.**
 >
 > Instrução e ciência são portas de acesso à educação e à sabedoria.
 >
-> **Quem apenas conhece nem sempre sabe.**
+> Quem apenas conhece nem sempre sabe.
 >
 > A cultura do espírito vai mais longe: ajuda o homem a converter-se em santuário vivo, através do qual se irradia o Poder Soberano e Misericordioso.
 >
 > Necessário, pois, semear pensamentos enobrecedores e santificantes, amparando a mente que recomeça a lição de aprimoramento individual.
 >
-> **Esquecer a infância e a juventude será desprezar o futuro.**
+> Esquecer a infância e a juventude será desprezar o futuro.
 
-<p class="datacao">Trecho publicado originalmente em 2012, no blog anterior. Grifos meus.</p>
+<p class="datacao">Trecho publicado originalmente em 2012, no blog anterior. Grifos meus, salvo o da epígrafe, que é do original.</p>
