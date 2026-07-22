@@ -24,8 +24,6 @@ description: "Trecho de O Grande Enigma, de Léon Denis, sobre o problema polít
 
 Denis escreveu isto antes de 1914, num capítulo chamado "A Missão do Século XX". O século XX aconteceu, e é possível conferir a previsão: uma parte dela se cumpriu de forma sombria, outra não.
 
-Comentei o trecho em <a href="{{ '/2026/07/leon-denis-o-seculo-xx-e-os-limites-do-coletivismo/' | relative_url }}">Léon Denis, o século XX e os limites do coletivismo</a>.
-
 <p class="datacao">Trecho publicado originalmente em 2012, no blog anterior. Nota acrescentada em julho de 2026.</p>
 
 </div>
