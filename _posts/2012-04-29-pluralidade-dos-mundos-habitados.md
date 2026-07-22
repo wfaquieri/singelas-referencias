@@ -48,7 +48,7 @@ Comentário lido em reunião pública de 6 de novembro de 1959, quando a corrida
 
 <div class="comentario" markdown="1">
 
-Sobre a mesma vertigem de escala, por outra porta: em [*Sabe com quem você está falando?*](https://www.youtube.com/watch?v=to_H4AbOp04), Mario Sergio Cortella percorre com humor o tamanho do cosmos — bilhões de galáxias, bilhões de estrelas em cada uma, o Sol como astro modesto — para chegar ao ponto de que a arrogância humana não sobrevive a essa aritmética. Ele não faz afirmação teológica alguma ali, e a conclusão dele não é a de Emmanuel; mas o espanto diante da escala é o mesmo, e vale ouvir ao lado deste texto.
+Sobre a mesma vertigem de escala, por outra porta: em [*Sabe com quem você está falando?*](https://www.youtube.com/watch?v=to_H4AbOp04), Mario Sergio Cortella percorre com humor o tamanho do cosmos (bilhões de galáxias, bilhões de estrelas em cada uma, o Sol como astro modesto) para chegar ao ponto de que a arrogância humana não sobrevive a essa aritmética. Ele não faz afirmação teológica alguma ali, e a conclusão dele não é a de Emmanuel; mas o espanto diante da escala é o mesmo, e vale ouvir ao lado deste texto.
 
 <p class="datacao">Trecho publicado originalmente em 2012, no blog anterior. Grifos meus. Nota sobre a palestra acrescentada em julho de 2026.</p>
 
