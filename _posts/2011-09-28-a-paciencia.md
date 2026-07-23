@@ -6,6 +6,8 @@ categories: referencias
 fonte: "Emmanuel, <em>O Consolador</em>, questão 254, psicografia de Chico Xavier"
 resumo: "Emmanuel sobre a disciplina que antecede a espontaneidade."
 description: "Questão 254 de O Consolador, de Emmanuel pela psicografia de Chico Xavier, sobre a paciência como fruto do amor e da disciplina própria."
+autores: ["Emmanuel"]
+temas: ["moral"]
 ---
 
 > **254. — Que é a paciência e como adquiri-la?**

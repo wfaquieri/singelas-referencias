@@ -6,6 +6,8 @@ categories: referencias
 fonte: "Allan Kardec, <em>O Que é o Espiritismo</em>, cap. II"
 resumo: "Kardec sobre o corpo fluídico e o mecanismo das aparições."
 description: "Trecho de O Que é o Espiritismo, de Allan Kardec, sobre o perispírito como matéria etérea e o modo como o Espírito age sobre a matéria."
+autores: ["Allan Kardec"]
+temas: ["mediunidade", "método", "ciência"]
 ---
 
 > **O perispírito, ainda que invisível para nós no estado normal, não é por isso menos matéria etérea.** O Espírito pode, em certos casos, fazê-lo experimentar uma espécie de modificação molecular que o torna visível e mesmo tangível; é assim que se produzem as aparições. Esse fenômeno não é mais extraordinário que o do vapor, que é invisível quando está muito rarefeito e que se torna visível quando está condensado.

@@ -5,6 +5,8 @@ date: 2018-03-25
 categories: apontamentos
 resumo: "A obra maior de Emmanuel é um gesto de gratidão a quem o amparou."
 description: "A ligação entre Emmanuel e o apóstolo Paulo de Tarso, do encontro na Porta Ápia ao amparo recebido por Públio Lentulus após a morte, e por que Paulo e Estêvão nasce dessa dívida."
+autores: ["Emmanuel"]
+temas: ["mediunidade", "moral"]
 ---
 
 <p class="lead">Emmanuel viu Paulo de Tarso uma única vez em Roma. O que veio depois desse encontro atravessou séculos.</p>

@@ -6,6 +6,8 @@ categories: referencias
 fonte: "Léon Denis, <em>O Grande Enigma</em>, Parte III, cap. XVI — “A Missão do Século XX”"
 resumo: "Léon Denis sobre democracia, coletivismo e a igualdade de direito que não é igualdade de fato."
 description: "Trecho de O Grande Enigma, de Léon Denis, sobre o problema político, o coletivismo e a fraternidade como contrapeso da liberdade."
+autores: ["Léon Denis"]
+temas: ["política", "ciência"]
 ---
 
 > O problema político não oferece menor gravidade. Sob a pressão dos acontecimentos, a maior parte das instituições monárquicas desmoronam-se, e a democracia triunfante estendeu-se sobre suas ruínas; em seu seio, porém, surgiu uma crise intensa. Crescem e espalham-se os elementos da anarquia. Os destinos da ciência materialista e os do Socialismo atual estão em correlação; inspiram-se pelos mesmos métodos e pelas mesmas fórmulas.

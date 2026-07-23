@@ -6,6 +6,8 @@ categories: referencias
 fonte: "Allan Kardec, <em>O Livro dos Espíritos</em>, q. 55; com reflexão de Emmanuel em <em>Religião dos Espíritos</em>"
 resumo: "Kardec e Emmanuel sobre os mundos habitados além da Terra."
 description: "A questão 55 de O Livro dos Espíritos sobre a pluralidade dos mundos habitados, com a reflexão de Emmanuel escrita às vésperas da corrida à Lua."
+autores: ["Allan Kardec", "Emmanuel"]
+temas: ["ciência"]
 ---
 
 ## A questão 55

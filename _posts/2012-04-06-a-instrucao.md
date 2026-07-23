@@ -6,6 +6,8 @@ categories: referencias
 fonte: "Emmanuel, prefácio de <em>Alvorada Cristã</em>, psicografia de Chico Xavier"
 resumo: "Emmanuel sobre instruir a inteligência sem educar o coração."
 description: "Trecho do prefácio de Alvorada Cristã, por Emmanuel, sobre a diferença entre instrução e sabedoria, com exemplos históricos de eruditos cruéis."
+autores: ["Emmanuel"]
+temas: ["estudo", "moral"]
 ---
 
 > **"Espíritas; amai-vos, eis o primeiro ensinamento; instruí-vos, eis o segundo."**
