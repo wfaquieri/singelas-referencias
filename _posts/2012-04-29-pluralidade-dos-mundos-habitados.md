@@ -29,7 +29,7 @@ Comentário lido em reunião pública de 6 de novembro de 1959, quando a corrida
 >
 > > "Deus povoou de seres vivos todos os mundos, concorrendo esses seres ao objetivo final da Providência."
 >
-> Sabemos hoje que moramos na Via-Láctea — a galáxia comparável a imensa cidade nos domínios universais. Essa cidade possui mais de duzentos milhões de sóis, transportando consigo planetas, asteróides, cometas, meteoros, aluviões de poeira e toda uma infinidade de turbilhões energéticos.
+> Sabemos hoje que moramos na Via-Láctea — a galáxia comparável a imensa cidade nos domínios universais. Essa cidade possui mais de duzentos milhões de sóis,[^1] transportando consigo planetas, asteróides, cometas, meteoros, aluviões de poeira e toda uma infinidade de turbilhões energéticos.
 >
 > Entre esses sóis está o nosso, modestíssimo foco de luz, considerando-se que Sírius, um de seus vizinhos, apresenta brilho quarenta vezes maior. E, acompanhando-o, a nossa Terra, com todo o cortejo de suas orgulhosas nações, tem a importância de uma "casa nos fundos", visto que, se a Lua é satélite nosso, o Globo que nos asila é satélite pequenino desse mesmo Sol que nos sustenta.
 >
@@ -47,10 +47,12 @@ Comentário lido em reunião pública de 6 de novembro de 1959, quando a corrida
 >
 > E desejando-lhe paz, a fim de que prossiga em suas arrojadas e preciosas perquirições, podemos assegurar que em todos os planos a consciência acordada à luz da razão e da responsabilidade surpreenderá sempre, por base de todo aperfeiçoamento moral, o preceito do Cristo que coloca "o amor a Deus e ao próximo" como sendo o coração da vida, pulsando, invariável, no peito da Justiça Divina que manda, em toda parte, conferir a cada um segundo as próprias obras.
 
+[^1]: Nota minha, não do original: as estimativas atuais situam o número de estrelas da Via-Láctea entre cem e quatrocentos bilhões, algo entre quinhentas e duas mil vezes a cifra de duzentos milhões que aparece aqui. O argumento do trecho, que é a modéstia da nossa posição no cosmos, não depende desse número, e um valor maior o reforçaria.
+
 <div class="comentario" markdown="1">
 
 Sobre a mesma vertigem de escala, por outra porta: em [*Sabe com quem você está falando?*](https://www.youtube.com/watch?v=to_H4AbOp04), Mario Sergio Cortella percorre com humor o tamanho do cosmos (bilhões de galáxias, bilhões de estrelas em cada uma, o Sol como astro modesto) para chegar ao ponto de que a arrogância humana não sobrevive a essa aritmética. Ele não faz afirmação teológica alguma ali, e a conclusão dele não é a de Emmanuel; mas o espanto diante da escala é o mesmo, e vale ouvir ao lado deste texto.
 
-<p class="datacao">Trecho publicado originalmente em 2012, no blog anterior. Grifos meus. Nota sobre a palestra acrescentada em julho de 2026.</p>
+<p class="datacao">Trecho publicado originalmente em 2012, no blog anterior. Grifos meus. A nota sobre a palestra e a nota de rodapé foram acrescentadas em julho de 2026; a nota de rodapé é minha, não do original.</p>
 
 </div>
