@@ -1,0 +1,295 @@
+---
+layout: default
+title: Relações
+permalink: /grafo/
+description: "Mapa das relações entre os textos do Singelas Referências, ligados pelos temas que dividem e pelos autores que se repetem."
+---
+
+<div class="pagina pagina-larga">
+
+<h1>Relações</h1>
+
+<p class="lead">Os textos daqui não são avulsos. Este é o desenho do que liga um ao outro: os temas que dividem e os autores que voltam.</p>
+
+<figure class="grafo">
+  <svg id="grafo" viewBox="0 0 900 620" role="img" aria-labelledby="grafo-titulo">
+    <title id="grafo-titulo">Grafo das relações entre os textos, ligados por tema e por autor</title>
+  </svg>
+  <figcaption class="grafo-legenda">
+    <span class="chave chave-referencia">Referência</span>
+    <span class="chave chave-apontamento">Apontamento</span>
+    <span class="chave chave-elo">tema ou autor</span>
+  </figcaption>
+</figure>
+
+<p class="grafo-instrucao">Passe o cursor sobre um ponto para isolar o que ele toca. Clique num texto para abri-lo.</p>
+
+<noscript>
+  <p class="grafo-aviso">O desenho depende de JavaScript. O índice abaixo tem a mesma informação em texto.</p>
+</noscript>
+
+<h2>Por tema</h2>
+
+{% assign temas = site.posts | map: "temas" | compact | join: "," | split: "," | uniq | sort %}
+
+<dl class="indice-temas">
+{% for tema in temas %}
+  {% assign doTema = site.posts | where_exp: "p", "p.temas contains tema" %}
+  <dt>{{ tema }}</dt>
+  <dd>
+    {% for post in doTema %}<a href="{{ post.url | relative_url }}">{{ post.title }}</a>{% unless forloop.last %} · {% endunless %}{% endfor %}
+  </dd>
+{% endfor %}
+</dl>
+
+</div>
+
+<script id="dados-grafo" type="application/json">
+[
+{% for post in site.posts %}{% assign cat = post.categories | first %}  {
+    "titulo": {{ post.title | jsonify }},
+    "url": {{ post.url | relative_url | jsonify }},
+    "cat": {{ cat | jsonify }},
+    "ano": {{ post.date | date: "%Y" | jsonify }},
+    "resumo": {{ post.resumo | jsonify }},
+    "autores": {{ post.autores | jsonify }},
+    "temas": {{ post.temas | jsonify }}
+  }{% unless forloop.last %},{% endunless %}
+{% endfor %}
+]
+</script>
+
+<script>
+(function () {
+  var svg = document.getElementById('grafo');
+  var fonte = document.getElementById('dados-grafo');
+  if (!svg || !fonte) return;
+
+  var L = 900, A = 620;
+  var NS = 'http://www.w3.org/2000/svg';
+
+  var textos;
+  try { textos = JSON.parse(fonte.textContent); } catch (e) { return; }
+  if (!textos || textos.length < 2) return;
+
+  // ---------------------------------------------------------------
+  // Grafo bipartido: os textos não se ligam entre si diretamente. O
+  // que os liga é um elo nomeado: um tema, ou um autor que se repete.
+  // Isso evita o emaranhado que sai de ligar par a par todo texto que
+  // divide um tema, e tem a vantagem de mostrar o motivo da ligação.
+  // ---------------------------------------------------------------
+
+  var nos = [];
+  var arestas = [];
+  var elos = {};
+
+  textos.forEach(function (d) {
+    nos.push({
+      tipo: 'texto',
+      cat: d.cat || 'referencias',
+      rotulo: d.titulo,
+      url: d.url,
+      dica: d.titulo + ' (' + d.ano + ')' + (d.resumo ? '. ' + d.resumo : ''),
+      temas: d.temas || [],
+      autores: d.autores || []
+    });
+  });
+
+  // Autor só vira elo se aparecer em mais de um texto; senão seria um
+  // apêndice pendurado num ponto só, sem informar nada.
+  var quantos = {};
+  nos.forEach(function (n) {
+    n.autores.forEach(function (a) { quantos[a] = (quantos[a] || 0) + 1; });
+  });
+
+  function elo(nome, especie) {
+    var chave = especie + ':' + nome;
+    if (elos[chave] === undefined) {
+      elos[chave] = nos.length;
+      nos.push({ tipo: 'elo', especie: especie, rotulo: nome, dica: especie + ': ' + nome });
+    }
+    return elos[chave];
+  }
+
+  nos.slice().forEach(function (n, i) {
+    if (n.tipo !== 'texto') return;
+    n.temas.forEach(function (t) { arestas.push({ a: i, b: elo(t, 'tema') }); });
+    n.autores.forEach(function (a) {
+      if (quantos[a] > 1) arestas.push({ a: i, b: elo(a, 'autor') });
+    });
+  });
+
+  // ---------------------------------------------------------------
+  // Layout: repulsão entre todos, mola nas arestas, atração ao centro.
+  // Sem aleatoriedade. A posição inicial é um círculo, então o desenho
+  // sai igual a cada carregamento.
+  // ---------------------------------------------------------------
+
+  nos.forEach(function (n, k) {
+    var ang = (k / nos.length) * Math.PI * 2;
+    n.x = L / 2 + Math.cos(ang) * 240;
+    n.y = A / 2 + Math.sin(ang) * 200;
+    n.carga = n.tipo === 'elo' ? 82000 : 46000;
+  });
+
+  var ITER = 700;
+  var p, q, k, dx, dy, d, d2;
+
+  for (var passo = 0; passo < ITER; passo++) {
+    var alfa = 0.09 * (1 - passo / ITER) + 0.004;
+    var fx = new Float64Array(nos.length);
+    var fy = new Float64Array(nos.length);
+
+    for (p = 0; p < nos.length; p++) {
+      for (q = p + 1; q < nos.length; q++) {
+        dx = nos[p].x - nos[q].x;
+        dy = nos[p].y - nos[q].y;
+        d2 = dx * dx + dy * dy;
+        if (d2 < 1) { dx = p - q || 1; dy = 1; d2 = dx * dx + 1; }
+        d = Math.sqrt(d2);
+        var rep = ((nos[p].carga + nos[q].carga) / 2) / d2;
+        fx[p] += (dx / d) * rep; fy[p] += (dy / d) * rep;
+        fx[q] -= (dx / d) * rep; fy[q] -= (dy / d) * rep;
+      }
+    }
+
+    arestas.forEach(function (e) {
+      dx = nos[e.b].x - nos[e.a].x;
+      dy = nos[e.b].y - nos[e.a].y;
+      d = Math.sqrt(dx * dx + dy * dy) || 1;
+      var f = (d - 150) * 0.055;
+      fx[e.a] += (dx / d) * f; fy[e.a] += (dy / d) * f;
+      fx[e.b] -= (dx / d) * f; fy[e.b] -= (dy / d) * f;
+    });
+
+    nos.forEach(function (n, i) {
+      fx[i] += (L / 2 - n.x) * 0.04;
+      fy[i] += (A / 2 - n.y) * 0.06;
+      n.x += Math.max(-25, Math.min(25, fx[i] * alfa));
+      n.y += Math.max(-25, Math.min(25, fy[i] * alfa));
+    });
+  }
+
+  // Rede de segurança: separa o que tiver ficado sobreposto, para o
+  // rótulo continuar legível mesmo se a simulação não convergir bem.
+  for (var s = 0; s < 200; s++) {
+    var mexeu = false;
+    for (p = 0; p < nos.length; p++) {
+      for (q = p + 1; q < nos.length; q++) {
+        dx = nos[q].x - nos[p].x;
+        dy = nos[q].y - nos[p].y;
+        d = Math.sqrt(dx * dx + dy * dy) || 0.01;
+        if (d >= 86) continue;
+        var ajuste = (86 - d) / 2;
+        nos[p].x -= (dx / d) * ajuste; nos[p].y -= (dy / d) * ajuste;
+        nos[q].x += (dx / d) * ajuste; nos[q].y += (dy / d) * ajuste;
+        mexeu = true;
+      }
+    }
+    if (!mexeu) break;
+  }
+
+  // Encaixa o resultado na moldura, para não sobrar margem morta.
+  (function ajustar() {
+    var mx = 78, my = 46;
+    var x0 = Infinity, x1 = -Infinity, y0 = Infinity, y1 = -Infinity;
+    nos.forEach(function (n) {
+      x0 = Math.min(x0, n.x); x1 = Math.max(x1, n.x);
+      y0 = Math.min(y0, n.y); y1 = Math.max(y1, n.y);
+    });
+    var ex = Math.min((L - 2 * mx) / Math.max(x1 - x0, 1), (A - 2 * my) / Math.max(y1 - y0, 1));
+    ex = Math.min(ex, 1.6);
+    nos.forEach(function (n) {
+      n.x = mx + (n.x - x0) * ex + (L - 2 * mx - (x1 - x0) * ex) / 2;
+      n.y = my + (n.y - y0) * ex + (A - 2 * my - (y1 - y0) * ex) / 2;
+    });
+  })();
+
+  // ---------------------------------------------------------------
+  // Desenho
+  // ---------------------------------------------------------------
+
+  function cria(tag, attrs) {
+    var el = document.createElementNS(NS, tag);
+    for (var a in attrs) el.setAttribute(a, attrs[a]);
+    return el;
+  }
+
+  function encurta(txt) {
+    return txt.length > 24 ? txt.slice(0, 23).trim() + '…' : txt;
+  }
+
+  var camadaArestas = cria('g', { 'class': 'arestas' });
+  var camadaNos = cria('g', { 'class': 'nos' });
+  svg.appendChild(camadaArestas);
+  svg.appendChild(camadaNos);
+
+  var vizinhos = nos.map(function () { return {}; });
+
+  arestas.forEach(function (e) {
+    e.el = cria('line', {
+      'class': 'aresta',
+      x1: nos[e.a].x, y1: nos[e.a].y,
+      x2: nos[e.b].x, y2: nos[e.b].y
+    });
+    camadaArestas.appendChild(e.el);
+    vizinhos[e.a][e.b] = true;
+    vizinhos[e.b][e.a] = true;
+  });
+
+  nos.forEach(function (n, i) {
+    var classe = n.tipo === 'elo' ? 'no no-elo no-elo-' + n.especie : 'no no-texto no-' + n.cat;
+    var g = cria('g', { 'class': classe });
+
+    if (n.tipo === 'elo') {
+      g.appendChild(cria('rect', {
+        x: n.x - 5, y: n.y - 5, width: 10, height: 10,
+        transform: 'rotate(45 ' + n.x + ' ' + n.y + ')'
+      }));
+    } else {
+      g.appendChild(cria('circle', { cx: n.x, cy: n.y, r: 7 }));
+      g.setAttribute('tabindex', '0');
+      g.setAttribute('role', 'link');
+    }
+
+    var rotulo = cria('text', { x: n.x, y: n.y + 22, 'text-anchor': 'middle' });
+    rotulo.textContent = n.tipo === 'elo' ? n.rotulo : encurta(n.rotulo);
+    g.appendChild(rotulo);
+
+    var dica = cria('title', {});
+    dica.textContent = n.dica;
+    g.appendChild(dica);
+
+    if (n.tipo === 'texto') {
+      var abrir = function () { window.location.href = n.url; };
+      g.addEventListener('click', abrir);
+      g.addEventListener('keydown', function (ev) {
+        if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); abrir(); }
+      });
+    }
+
+    function focar() {
+      svg.classList.add('em-foco');
+      nos.forEach(function (outro, j) {
+        outro.el.classList.toggle('vizinho', j === i || vizinhos[i][j]);
+      });
+      arestas.forEach(function (e) {
+        e.el.classList.toggle('vizinho', e.a === i || e.b === i);
+      });
+    }
+    function desfocar() {
+      svg.classList.remove('em-foco');
+      nos.forEach(function (outro) { outro.el.classList.remove('vizinho'); });
+      arestas.forEach(function (e) { e.el.classList.remove('vizinho'); });
+    }
+
+    g.addEventListener('mouseenter', focar);
+    g.addEventListener('mouseleave', desfocar);
+    g.addEventListener('focus', focar);
+    g.addEventListener('blur', desfocar);
+
+    n.el = g;
+    camadaNos.appendChild(g);
+  });
+})();
+</script>
