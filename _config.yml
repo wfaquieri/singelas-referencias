@@ -4,12 +4,10 @@ author: Winicius B. Faquieri
 email: wfaquieri@gmail.com
 lang: pt-BR
 
-# Domínio próprio: deixe baseurl vazio e url com o domínio.
-# Sem domínio (wfaquieri.github.io/singelas-referencias):
-#   baseurl: "/singelas-referencias"
-#   url: "https://wfaquieri.github.io"
-url: "https://wfaquieri.github.io"
-baseurl: "/singelas-referencias"
+# Domínio próprio. Este par tem que casar com o arquivo CNAME da raiz: se um
+# mudar e o outro não, todo link e todo CSS do site quebram de uma vez.
+url: "https://singelasreferencias.com.br"
+baseurl: ""
 
 permalink: /:year/:month/:title/
 
