@@ -25,11 +25,15 @@ Já desencarnado, era frequentador assíduo das reuniões do Culto do Evangelho 
 
 O detalhe que dá vertigem é a composição do grupo. Quem lê as obras encontra ali, encarnados, os personagens que conheceu nos livros:
 
-| Presente na reunião | Vínculo | Aparece em |
+<div class="tabela" markdown="1">
+
+| Presente na reunião | Vínculo | Aparece nos romances como |
 |---|---|---|
-| Rômulo Joviano | filho de Neio Lúcio | Helvídio Lucius, de *Cinquenta Anos Depois*; Cirilo Davenport, de *Renúncia* |
-| Maria Joviano | nora de Neio Lúcio | Alba Lucínia; Madalena Vilamil |
+| Rômulo Joviano | filho de Neio Lúcio | Helvídio Lucius, de *Cinquenta Anos Depois*<br>Cirilo Davenport, de *Renúncia* |
+| Maria Joviano | nora de Neio Lúcio | Alba Lucínia<br>Madalena Vilamil |
 | Chico Xavier | médium | |
+
+</div>
 
 Um pai desencarnado conversando com o filho encarnado, à mesa da própria casa, sobre uma história que os dois viveram juntos quinze séculos antes.
 
