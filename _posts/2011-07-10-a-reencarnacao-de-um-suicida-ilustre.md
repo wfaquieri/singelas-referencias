@@ -14,7 +14,7 @@ No livro *Memórias de um Suicida* podemos acompanhar a trajetória desse espír
 
 Através das eloquentes memórias desse espírito que, quando encarnado, empolgou a sociedade de sua época com seu estilo inconfundível, estilo que até os dias atuais ainda prende e encanta o leitor, vamos anotar a sua revelação sobre uma próxima reencarnação. Sim, Camilo tinha necessidade de reencarnar para, mergulhado no esquecimento, tentar reparar o imenso mal causado a si mesmo com a fuga da realidade.
 
-Aliás, um dos mais significativos "remédios evolutivos", não apenas para espíritos suicidas como para todos os que necessitam de reajustes, é a reencarnação. Reencarnar é catalisar a evolução do espírito, permitindo-lhe, no contato com o mundo físico, acelerar o seu processo de amadurecimento espiritual.
+Aliás, um dos mais significativos "remédios evolutivos", não apenas para espíritos suicidas como para todos os que necessitam de reajustes, é a reencarnação. <mark>Reencarnar é catalisar a evolução do espírito, permitindo-lhe, no contato com o mundo físico, acelerar o seu processo de amadurecimento espiritual.</mark>
 
 Foi a iminência dessa reencarnação que impediu o escritor desencarnado, inclusive, de levar à frente o trabalho de organização e revisão de *Memórias de um Suicida* para sua posterior publicação. A revisão, a propósito, somente foi realizada um ano após a publicação da primeira edição da obra, ou seja, em 1957, pelo espírito Léon Denis.
 
