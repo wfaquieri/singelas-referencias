@@ -97,61 +97,28 @@ a:hover { text-decoration-color: var(--realce); }
 
 .lista-resumo { margin: 0.5rem 0 0; color: var(--suave); font-size: 1rem; }
 
-/* ---------- home em duas colunas ---------- */
-/* Referências de um lado, apontamentos do outro. A separação que o rótulo do
-   item fazia em texto agora é feita pelo lugar na página. */
+/* ---------- home: fluxo único em duas colunas ---------- */
+/* Não são duas listas, é uma só. O DOM continua sendo um único <ul> na ordem
+   cronológica, e quem distribui em duas colunas é o navegador. Isso importa:
+   leitor de tela e buscador leem na ordem certa, e a coluna da direita é a
+   continuação da esquerda, não outra categoria. */
 
-.colunas {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0 3.5rem;
+.lista-fluxo {
   max-width: var(--medida-larga);
-  margin: 0 auto;
+  columns: 2;
+  column-gap: 3.5rem;
+  column-rule: 1px solid var(--tenue);
 }
 
-/* min-width: 0 impede que um título longo estoure a coluna do grid. */
-.coluna { min-width: 0; }
-
-.coluna + .coluna { position: relative; }
-
-.coluna + .coluna::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: -1.75rem;
-  border-left: 1px solid var(--tenue);
+.lista-fluxo .lista-item {
+  /* Sem isto um texto pode ser cortado ao meio pela quebra de coluna. */
+  break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+  padding: 1.5rem 0;
 }
 
-.coluna-titulo {
-  margin: 0;
-  color: var(--realce);
-  font-size: 0.8rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.coluna-nota {
-  margin: 0.4rem 0 1.25rem;
-  color: var(--suave);
-  font-size: 0.85rem;
-  font-style: italic;
-}
-
-.coluna-vazia {
-  margin: 0;
-  padding-top: 1.5rem;
-  border-top: 1px solid var(--tenue);
-  color: var(--suave);
-  font-size: 0.95rem;
-  font-style: italic;
-}
-
-.colunas .lista { max-width: none; margin: 0; }
-.colunas .lista-item { padding: 1.5rem 0; }
-.colunas .lista-titulo { font-size: 1.2rem; }
-.colunas .lista-resumo { font-size: 0.95rem; }
+.lista-fluxo .lista-titulo { font-size: 1.2rem; }
+.lista-fluxo .lista-resumo { font-size: 0.95rem; }
 
 .home-rodape {
   max-width: var(--medida-larga);
@@ -166,16 +133,9 @@ a:hover { text-decoration-color: var(--realce); }
 .home-rodape a { text-decoration: none; }
 .home-rodape a:hover { color: var(--realce); }
 
-/* Abaixo de 52rem não cabem duas medidas de leitura lado a lado; empilha. */
+/* Abaixo de 52rem não cabem duas medidas de leitura lado a lado; vira uma. */
 @media (max-width: 52rem) {
-  .colunas {
-    grid-template-columns: 1fr;
-    gap: 0;
-    max-width: var(--medida);
-  }
-
-  .coluna + .coluna { margin-top: 3.5rem; }
-  .coluna + .coluna::before { display: none; }
+  .lista-fluxo { columns: 1; max-width: var(--medida); }
   .home-rodape { max-width: var(--medida); }
 }
 
