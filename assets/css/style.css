@@ -6,6 +6,7 @@
   --fundo: #171614;
   --realce: #d08c78;
   --medida: 34rem;
+  --medida-larga: 62rem;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -95,6 +96,88 @@ a:hover { text-decoration-color: var(--realce); }
 .lista-titulo a:hover { color: var(--realce); }
 
 .lista-resumo { margin: 0.5rem 0 0; color: var(--suave); font-size: 1rem; }
+
+/* ---------- home em duas colunas ---------- */
+/* Referências de um lado, apontamentos do outro. A separação que o rótulo do
+   item fazia em texto agora é feita pelo lugar na página. */
+
+.colunas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 3.5rem;
+  max-width: var(--medida-larga);
+  margin: 0 auto;
+}
+
+/* min-width: 0 impede que um título longo estoure a coluna do grid. */
+.coluna { min-width: 0; }
+
+.coluna + .coluna { position: relative; }
+
+.coluna + .coluna::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -1.75rem;
+  border-left: 1px solid var(--tenue);
+}
+
+.coluna-titulo {
+  margin: 0;
+  color: var(--realce);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.coluna-nota {
+  margin: 0.4rem 0 1.25rem;
+  color: var(--suave);
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+.coluna-vazia {
+  margin: 0;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--tenue);
+  color: var(--suave);
+  font-size: 0.95rem;
+  font-style: italic;
+}
+
+.colunas .lista { max-width: none; margin: 0; }
+.colunas .lista-item { padding: 1.5rem 0; }
+.colunas .lista-titulo { font-size: 1.2rem; }
+.colunas .lista-resumo { font-size: 0.95rem; }
+
+.home-rodape {
+  max-width: var(--medida-larga);
+  margin: 3rem auto 0;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--tenue);
+  color: var(--suave);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.home-rodape a { text-decoration: none; }
+.home-rodape a:hover { color: var(--realce); }
+
+/* Abaixo de 52rem não cabem duas medidas de leitura lado a lado; empilha. */
+@media (max-width: 52rem) {
+  .colunas {
+    grid-template-columns: 1fr;
+    gap: 0;
+    max-width: var(--medida);
+  }
+
+  .coluna + .coluna { margin-top: 3.5rem; }
+  .coluna + .coluna::before { display: none; }
+  .home-rodape { max-width: var(--medida); }
+}
 
 /* ---------- texto ---------- */
 
@@ -197,6 +280,122 @@ a:hover { text-decoration-color: var(--realce); }
 }
 
 .creditos p { margin: 0; }
+
+/* ---------- grafo das relações ---------- */
+
+.pagina-larga { max-width: var(--medida-larga); }
+
+.grafo {
+  margin: 2.5rem 0 0;
+  padding: 1rem 0;
+  border-top: 1px solid var(--tenue);
+  border-bottom: 1px solid var(--tenue);
+}
+
+.grafo svg { display: block; width: 100%; height: auto; }
+
+.aresta { stroke: var(--tenue); stroke-width: 1; }
+
+.no-texto { cursor: pointer; }
+.no circle { fill: var(--suave); }
+.no-apontamentos circle { fill: var(--realce); }
+
+/* O elo (tema ou autor) é losango, não ponto: não se clica, não é texto. */
+.no-elo rect { fill: none; stroke: var(--suave); stroke-width: 1.5; }
+.no-elo text { font-style: italic; font-size: 12px; }
+
+.no text {
+  fill: var(--suave);
+  font-family: inherit;
+  font-size: 13px;
+  /* Contorno da cor do fundo para o rótulo não sumir sobre as linhas. */
+  paint-order: stroke;
+  stroke: var(--fundo);
+  stroke-width: 3px;
+  stroke-linejoin: round;
+}
+
+.no:focus { outline: none; }
+.no-texto:focus text, .no-texto:hover text { fill: var(--texto); }
+
+/* Ao passar o cursor num ponto, o resto do grafo recua. */
+.em-foco .aresta { stroke-opacity: 0.12; }
+.em-foco .no circle,
+.em-foco .no rect { opacity: 0.18; }
+.em-foco .no text { fill-opacity: 0.12; stroke-opacity: 0.12; }
+
+.em-foco .aresta.vizinho { stroke-opacity: 1; stroke: var(--realce); }
+.em-foco .no.vizinho circle,
+.em-foco .no.vizinho rect { opacity: 1; }
+.em-foco .no.vizinho text { fill-opacity: 1; stroke-opacity: 1; fill: var(--texto); }
+
+.grafo-legenda {
+  margin-top: 0.75rem;
+  color: var(--suave);
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+
+.chave { display: inline-block; margin: 0 0.6rem; white-space: nowrap; }
+
+.chave::before {
+  content: "";
+  display: inline-block;
+  margin-right: 0.4rem;
+  vertical-align: middle;
+}
+
+.chave-referencia::before,
+.chave-apontamento::before {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: var(--suave);
+}
+
+.chave-apontamento::before { background: var(--realce); }
+
+.chave-elo::before {
+  width: 0.45rem;
+  height: 0.45rem;
+  border: 1px solid var(--suave);
+  transform: rotate(45deg);
+}
+
+.grafo-instrucao {
+  margin: 1rem 0 0;
+  color: var(--suave);
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+.grafo-aviso { color: var(--suave); font-style: italic; }
+
+.indice-temas { margin: 1.5rem 0 0; }
+
+.indice-temas dt {
+  margin-top: 1.25rem;
+  color: var(--realce);
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.indice-temas dd {
+  margin: 0.35rem 0 0;
+  color: var(--suave);
+  font-size: 0.95rem;
+}
+
+.indice-temas dd a { color: var(--texto); text-decoration: none; }
+.indice-temas dd a:hover { color: var(--realce); }
+
+.pagina-larga h2 {
+  margin: 3rem 0 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
 
 /* ---------- notas de rodapé ---------- */
 

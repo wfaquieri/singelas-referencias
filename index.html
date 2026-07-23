@@ -2,17 +2,12 @@
 layout: default
 ---
 
-<ul class="lista">
-{% for post in site.posts %}
-  {% assign m = post.date | date: "%-m" | minus: 1 %}
-  {% assign cat = post.categories | first %}
-  <li class="lista-item">
-    <p class="lista-meta">
-      {% if cat %}<span class="lista-rotulo">{{ site.rotulos[cat] | default: cat }}</span>{% endif %}
-      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d" }} de {{ site.meses[m] }} de {{ post.date | date: "%Y" }}</time>
-    </p>
-    <h2 class="lista-titulo"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-    {% if post.resumo %}<p class="lista-resumo">{{ post.resumo }}</p>{% endif %}
-  </li>
-{% endfor %}
-</ul>
+{% assign referencias = site.posts | where_exp: "p", "p.categories contains 'referencias'" %}
+{% assign apontamentos = site.posts | where_exp: "p", "p.categories contains 'apontamentos'" %}
+
+<div class="colunas">
+  {% include coluna.html posts=referencias titulo="Referências" nota="Trecho de outro autor, com a razão de ter sido escolhido." %}
+  {% include coluna.html posts=apontamentos titulo="Apontamentos" nota="Texto meu, quando o assunto pede mais do que um trecho." %}
+</div>
+
+<p class="home-rodape"><a href="{{ '/grafo/' | relative_url }}">Ver as relações entre os textos →</a></p>
