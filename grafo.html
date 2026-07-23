@@ -16,8 +16,7 @@ description: "Mapa das relações entre os textos do Singelas Referências, liga
     <title id="grafo-titulo">Grafo das relações entre os textos, ligados por tema e por autor</title>
   </svg>
   <figcaption class="grafo-legenda">
-    <span class="chave chave-referencia">Referência</span>
-    <span class="chave chave-apontamento">Apontamento</span>
+    <span class="chave chave-texto">texto</span>
     <span class="chave chave-elo">tema ou autor</span>
   </figcaption>
 </figure>
@@ -46,10 +45,9 @@ description: "Mapa das relações entre os textos do Singelas Referências, liga
 
 <script id="dados-grafo" type="application/json">
 [
-{% for post in site.posts %}{% assign cat = post.categories | first %}  {
+{% for post in site.posts %}  {
     "titulo": {{ post.title | jsonify }},
     "url": {{ post.url | relative_url | jsonify }},
-    "cat": {{ cat | jsonify }},
     "ano": {{ post.date | date: "%Y" | jsonify }},
     "resumo": {{ post.resumo | jsonify }},
     "autores": {{ post.autores | jsonify }},
@@ -86,7 +84,6 @@ description: "Mapa das relações entre os textos do Singelas Referências, liga
   textos.forEach(function (d) {
     nos.push({
       tipo: 'texto',
-      cat: d.cat || 'referencias',
       rotulo: d.titulo,
       url: d.url,
       dica: d.titulo + ' (' + d.ano + ')' + (d.resumo ? '. ' + d.resumo : ''),
@@ -238,7 +235,7 @@ description: "Mapa das relações entre os textos do Singelas Referências, liga
   });
 
   nos.forEach(function (n, i) {
-    var classe = n.tipo === 'elo' ? 'no no-elo no-elo-' + n.especie : 'no no-texto no-' + n.cat;
+    var classe = n.tipo === 'elo' ? 'no no-elo no-elo-' + n.especie : 'no no-texto';
     var g = cria('g', { 'class': classe });
 
     if (n.tipo === 'elo') {

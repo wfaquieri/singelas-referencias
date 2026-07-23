@@ -2,7 +2,6 @@
 layout: post
 title: "O problema político"
 date: 2012-06-07
-categories: referencias
 fonte: "Léon Denis, <em>O Grande Enigma</em>, Parte III, cap. XVI — “A Missão do Século XX”"
 resumo: "Léon Denis sobre democracia, coletivismo e a igualdade de direito que não é igualdade de fato."
 description: "Trecho de O Grande Enigma, de Léon Denis, sobre o problema político, o coletivismo e a fraternidade como contrapeso da liberdade."

@@ -2,7 +2,6 @@
 layout: post
 title: "Vulgar é o ler, raro o refletir"
 date: 2011-01-25
-categories: referencias
 fonte: "Rui Barbosa, <em>Oração aos Moços</em>, 1921"
 resumo: "Rui Barbosa sobre madrugar no ler e madrugar no pensar."
 description: "Trecho da Oração aos Moços, de Rui Barbosa, sobre o hábito de madrugar e a diferença entre absorver ciência alheia e gerar ideias próprias."

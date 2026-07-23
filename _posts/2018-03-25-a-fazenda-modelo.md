@@ -2,7 +2,6 @@
 layout: post
 title: "A Fazenda Modelo"
 date: 2018-03-25
-categories: apontamentos
 resumo: "Onde Paulo e Estêvão foi recebido, e quem estava na sala."
 description: "As reuniões do Culto do Evangelho no Lar da família Joviano, em Pedro Leopoldo, e os personagens de Cinquenta Anos Depois e Renúncia que se sentavam à mesa."
 autores: ["Emmanuel"]

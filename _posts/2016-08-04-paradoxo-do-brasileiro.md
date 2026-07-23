@@ -2,7 +2,6 @@
 layout: post
 title: "Paradoxo do brasileiro"
 date: 2016-08-04
-categories: referencias
 fonte: "Eduardo Giannetti, <em>Vícios privados, benefícios públicos?</em>, prefácio"
 resumo: "Giannetti sobre o país que ninguém reconhece como seu."
 description: "Trecho do prefácio de Vícios privados, benefícios públicos?, de Eduardo Giannetti, sobre a distância entre a indignação sincera de cada brasileiro e o resultado coletivo que todos produzem."
@@ -61,8 +60,6 @@ temas: ["política", "moral"]
 Giannetti escreveu este prefácio em 1993, com o impeachment do Collor ainda quente. Publiquei o trecho em agosto de 2016, no meio do impeachment da Dilma. Releio agora, em 2026. Nas três vezes o texto descreveu o presente sem precisar de um ajuste sequer. Não é elogio à permanência do problema: é o texto se cumprindo enquanto se lê, porque ele mesmo avisa que o paradoxo se acentua quanto mais a realidade coletiva ofende a nossa autoestima. Escolhi o texto pelo motivo que o próprio texto prevê.
 
 Vale reparar no título do livro. *Vícios privados, benefícios públicos?* é a tese de Mandeville na *Fábula das Abelhas*, de 1714, com um ponto de interrogação colado no fim: a ganância e a vaidade de cada um acabariam produzindo prosperidade para todos. O paradoxo do prefácio é o espelho invertido dessa fórmula. Aqui há virtude privada gerando vício público, e a soma das boas intenções produz um resultado que nenhuma das parcelas reconhece como sua.
-
-Giannetti se inclui no paradoxo entre parênteses, quase de passagem, e com isso fecha a porta para quem viesse comentá-lo de fora. Republicar um texto sobre a distância entre o que dizemos e o que fazemos, e sentir-se um pouco melhor por tê-lo republicado, é precisamente a operação que ele descreve.
 
 <p class="datacao">Trecho publicado originalmente em 4 de agosto de 2016, no blog anterior. A citação foi abreviada em julho de 2026; os cortes estão marcados com <code>[...]</code>. Giannetti registra dois depoimentos no prefácio; o primeiro, de Nelson Rodrigues, ficou de fora deste recorte. Grifos meus. Nota acrescentada em julho de 2026.</p>
 

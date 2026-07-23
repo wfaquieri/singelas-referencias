@@ -2,7 +2,6 @@
 layout: post
 title: "Aos Obreiros do Senhor"
 date: 2011-10-26
-categories: referencias
 fonte: "Vinícius, <em>Na Seara do Mestre</em>, cap. 1, FEB"
 resumo: "Vinícius sobre a vaidade de quem se julga indispensável."
 description: "Trecho de Na Seara do Mestre, de Vinícius, sobre a desproporção entre a tarefa que nos cabe e a obra inteira, e o perigo do personalismo no trabalho espírita."

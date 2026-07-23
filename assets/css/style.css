@@ -83,8 +83,6 @@ a:hover { text-decoration-color: var(--realce); }
   text-transform: uppercase;
 }
 
-.lista-rotulo::after { content: " ·"; }
-
 .lista-titulo {
   margin: 0.4rem 0 0;
   font-size: 1.35rem;
@@ -147,14 +145,6 @@ a:hover { text-decoration-color: var(--realce); }
 }
 
 .post-header { padding-bottom: 2rem; }
-
-.post-kicker {
-  margin: 0;
-  color: var(--realce);
-  font-size: 0.8rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
 
 .post-title, .pagina h1 {
   margin: 0.5rem 0 0;
@@ -298,7 +288,6 @@ a:hover { text-decoration-color: var(--realce); }
 
 .no-texto { cursor: pointer; }
 .no circle { fill: var(--suave); }
-.no-apontamentos circle { fill: var(--realce); }
 
 /* O elo (tema ou autor) é losango, não ponto: não se clica, não é texto. */
 .no-elo rect { fill: none; stroke: var(--suave); stroke-width: 1.5; }
@@ -346,15 +335,12 @@ a:hover { text-decoration-color: var(--realce); }
   vertical-align: middle;
 }
 
-.chave-referencia::before,
-.chave-apontamento::before {
+.chave-texto::before {
   width: 0.5rem;
   height: 0.5rem;
   border-radius: 50%;
   background: var(--suave);
 }
-
-.chave-apontamento::before { background: var(--realce); }
 
 .chave-elo::before {
   width: 0.45rem;

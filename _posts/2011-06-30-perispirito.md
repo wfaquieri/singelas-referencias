@@ -2,7 +2,6 @@
 layout: post
 title: "Perispírito"
 date: 2011-06-30
-categories: referencias
 fonte: "Allan Kardec, <em>O Que é o Espiritismo</em>, cap. II"
 resumo: "Kardec sobre o corpo fluídico e o mecanismo das aparições."
 description: "Trecho de O Que é o Espiritismo, de Allan Kardec, sobre o perispírito como matéria etérea e o modo como o Espírito age sobre a matéria."

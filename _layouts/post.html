@@ -2,12 +2,10 @@
 layout: default
 ---
 {% assign m = page.date | date: "%-m" | minus: 1 %}
-{% assign cat = page.categories | first %}
 
 <article class="post">
 
   <header class="post-header">
-    {% if cat %}<p class="post-kicker">{{ site.rotulos[cat] | default: cat }}</p>{% endif %}
     <h1 class="post-title">{{ page.title }}</h1>
     <p class="post-meta">
       <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d" }} de {{ site.meses[m] }} de {{ page.date | date: "%Y" }}</time>
@@ -20,16 +18,15 @@ layout: default
   </div>
 
   {% comment %}
-    Nota de autor só em texto meu. Em Referência, o texto é de outro — assinar embaixo
-    dele soa como reivindicação de autoria. A origem já está no cabeçalho, em `fonte`.
+    A nota de autor aparece em todo texto. Ela é biografia, não assinatura: quem
+    escreveu o trecho está dito no cabeçalho, em `fonte`, e onde falo eu está
+    marcado pela caixa de Nota, que o próprio texto traz.
   {% endcomment %}
   <footer class="post-footer">
-    {% if cat == 'apontamentos' %}
     <p class="nota-autor">
       {{ site.author }} é cientista de dados e doutorando em Ciência da Computação (UFF).
       Currículo em <a href="https://wfaquieri.github.io/">wfaquieri.github.io</a>.
     </p>
-    {% endif %}
     <p class="resposta">
       Comentários e discordâncias:
       <a href="mailto:{{ site.email }}">{{ site.email }}</a>

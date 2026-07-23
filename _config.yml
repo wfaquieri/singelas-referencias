@@ -24,13 +24,6 @@ plugins:
 feed:
   path: feed.xml
 
-# Rótulos das duas naturezas de post.
-# apontamentos -> texto meu
-# referencias  -> texto de outro autor, com trecho e comentário
-rotulos:
-  apontamentos: Apontamento
-  referencias: Referência
-
 meses:
   - janeiro
   - fevereiro

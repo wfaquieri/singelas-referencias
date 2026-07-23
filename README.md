@@ -63,25 +63,47 @@ Um arquivo em `_posts/`, no formato `AAAA-MM-DD-titulo-em-kebab-case.md`:
 layout: post
 title: "Título do texto"
 date: 2026-07-20
-categories: referencias      # ou: apontamentos
+fonte: "Rui Barbosa, Oração aos Moços, 1921"
 resumo: "Uma linha que aparece na home."
+description: "Uma frase para busca e para redes sociais."
+autores: ["Rui Barbosa"]
+temas: ["estudo", "método"]
 ---
 
 Texto em Markdown.
 ```
 
-### As duas categorias
+`fonte:` credita a origem no cabeçalho do texto. Só faz sentido quando há trecho
+de outro autor; num texto inteiramente seu, omita.
 
-- `apontamentos` — texto seu. Aparece rotulado como **Apontamento**.
-- `referencias` — trecho de outro autor com o seu comentário. Rótulo: **Referência**.
+### Quem fala onde
 
-É a distinção que resolve o "mistura texto meu com texto dos outros": ela fica
-explícita no rótulo, e o leitor sabe sempre o que está recebendo. Para creditar a
-origem no cabeçalho, use `fonte:` no front matter:
+Não há categoria separando "texto meu" de "texto dos outros". Houve, e foi
+retirada: quase todo texto aqui é trecho alheio com comentário meu, e a linha
+entre uma coisa e outra é tênue demais para virar arrumação. Quem resolve o
+"mistura texto meu com texto dos outros" são três coisas dentro da própria
+página:
 
-```yaml
-fonte: "Rui Barbosa, Oração aos Moços, 1921"
+- `fonte:` no cabeçalho, dizendo de quem é o trecho;
+- a citação em bloco (`>`), que é do outro autor;
+- a caixa de Nota, onde entra o comentário seu:
+
+```markdown
+<div class="comentario" markdown="1">
+
+O que você tem a dizer sobre o trecho.
+
+<p class="datacao">Origem, grifos, data da nota.</p>
+
+</div>
 ```
+
+### Autores e temas
+
+`autores:` e `temas:` alimentam a página `/grafo/`. **Texto sem esses campos não
+aparece ligado a nada.** Temas em uso: `ciência`, `estudo`, `mediunidade`,
+`método`, `moral`, `política`. Autor só vira nó no grafo quando aparece em dois
+ou mais textos.
 
 ### Notas de rodapé
 

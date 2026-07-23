@@ -2,7 +2,6 @@
 layout: post
 title: "A dúvida de Flammarion sobre a própria mediunidade"
 date: 2026-07-23
-categories: referencias
 fonte: "Elias Inácio de Moraes, <em>O Processo Mediúnico</em>, Aephus, 2023"
 resumo: "Elias Moraes sobre o astrônomo que reviu a própria psicografia."
 description: "Trecho de O Processo Mediúnico, de Elias Inácio de Moraes, sobre Camille Flammarion, médium do capítulo VI de A Gênese, e a conclusão a que ele chegou em 1899 a respeito do próprio trabalho psicográfico."
