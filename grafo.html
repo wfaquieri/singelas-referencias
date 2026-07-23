@@ -167,25 +167,6 @@ description: "Mapa das relações entre os textos do Singelas Referências, liga
     });
   }
 
-  // Rede de segurança: separa o que tiver ficado sobreposto, para o
-  // rótulo continuar legível mesmo se a simulação não convergir bem.
-  for (var s = 0; s < 200; s++) {
-    var mexeu = false;
-    for (p = 0; p < nos.length; p++) {
-      for (q = p + 1; q < nos.length; q++) {
-        dx = nos[q].x - nos[p].x;
-        dy = nos[q].y - nos[p].y;
-        d = Math.sqrt(dx * dx + dy * dy) || 0.01;
-        if (d >= 86) continue;
-        var ajuste = (86 - d) / 2;
-        nos[p].x -= (dx / d) * ajuste; nos[p].y -= (dy / d) * ajuste;
-        nos[q].x += (dx / d) * ajuste; nos[q].y += (dy / d) * ajuste;
-        mexeu = true;
-      }
-    }
-    if (!mexeu) break;
-  }
-
   // Encaixa o resultado na moldura, para não sobrar margem morta.
   (function ajustar() {
     var mx = 78, my = 46;
@@ -201,6 +182,46 @@ description: "Mapa das relações entre os textos do Singelas Referências, liga
       n.y = my + (n.y - y0) * ex + (A - 2 * my - (y1 - y0) * ex) / 2;
     });
   })();
+
+  // Rede de segurança: afasta o que tiver ficado sobreposto. A conta é feita
+  // sobre a caixa do rótulo, não sobre o ponto: dois textos podem estar longe
+  // um do outro e ainda assim ter os nomes se atropelando, porque o nome é
+  // largo e baixo. Roda depois do encaixe, senão o encaixe desfaria o trabalho.
+
+  nos.forEach(function (n) {
+    var largura = n.tipo === 'elo' ? 3.1 : 3.4;
+    n.meiaL = Math.min(n.rotulo.length, 24) * largura + 5;
+  });
+
+  for (var s = 0; s < 400; s++) {
+    var mexeu = false;
+    for (p = 0; p < nos.length; p++) {
+      for (q = p + 1; q < nos.length; q++) {
+        dx = nos[q].x - nos[p].x;
+        dy = nos[q].y - nos[p].y;
+        var precisaX = nos[p].meiaL + nos[q].meiaL;
+        var precisaY = 30;
+        var faltaX = precisaX - Math.abs(dx);
+        var faltaY = precisaY - Math.abs(dy);
+        if (faltaX <= 0 || faltaY <= 0) continue;
+        // Empurra pelo eixo que exige menos deslocamento. O peso de 2.5
+        // reflete que mexer na vertical estraga menos o desenho.
+        if (faltaX < faltaY * 2.5) {
+          var ex = (dx < 0 ? -1 : 1) * (faltaX / 2 + 0.5);
+          nos[p].x -= ex; nos[q].x += ex;
+        } else {
+          var ey = (dy < 0 ? -1 : 1) * (faltaY / 2 + 0.5);
+          nos[p].y -= ey; nos[q].y += ey;
+        }
+        mexeu = true;
+      }
+    }
+    nos.forEach(function (n) {
+      n.x = Math.max(n.meiaL + 4, Math.min(L - n.meiaL - 4, n.x));
+      n.y = Math.max(30, Math.min(A - 34, n.y));
+    });
+    if (!mexeu) break;
+  }
 
   // ---------------------------------------------------------------
   // Desenho
