@@ -183,6 +183,25 @@ a:hover { text-decoration-color: var(--realce); }
 
 .post-content strong { font-weight: 600; }
 
+/* ---------- destaque dentro da citação ---------- */
+/* No trecho citado o texto já é itálico e já vive apagado, então o negrito
+   muda pouco e some. Aqui o destaque não acrescenta ornamento nenhum: tira o
+   apagamento. O que estava em cinza sobe para o branco do texto corrido, e um
+   filete fino sublinha. Fora de citação o texto já está claro, então sobra só
+   o filete, que é uma marca mais fraca de propósito.
+
+   text-decoration, e não borda ou sombra, para o filete acompanhar cada linha
+   quando o destaque quebra em várias. */
+
+.post-content mark {
+  background: none;
+  color: var(--texto);
+  text-decoration: underline;
+  text-decoration-color: var(--realce);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}
+
 .post-content hr {
   margin: 3rem auto;
   width: 4rem;

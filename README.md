@@ -105,6 +105,34 @@ aparece ligado a nada.** Temas em uso: `ciência`, `estudo`, `mediunidade`,
 `método`, `moral`, `política`. Autor só vira nó no grafo quando aparece em dois
 ou mais textos.
 
+### Destacar um trecho dentro da citação
+
+Negrito não serve para isso. Dentro do trecho citado o texto já é itálico e já
+está apagado em cinza, então o negrito mexe numa variável só e some. Para chamar
+o olho do leitor a uma passagem, use `<mark>`:
+
+```markdown
+> <mark>A frase que você quer que o leitor não perca.</mark> O resto do
+> parágrafo segue normalmente.
+```
+
+O trecho marcado sai do cinza e sobe para o branco do texto corrido, com um
+filete fino por baixo. O destaque não acrescenta nada à página: ele apenas
+deixa de apagar o que estava apagado.
+
+`<mark>` é a marcação certa também fora do visual: leitor de tela anuncia como
+realce, e o RSS carrega junto. Fora de citação o efeito é mais fraco, porque ali
+o texto já está claro e sobra só o filete.
+
+**Um por texto.** Ele é forte de propósito; havendo dois, deixa de destacar.
+É limite próprio, separado dos dois grifos em negrito.
+
+**Sempre declarar**, como qualquer grifo acrescentado, na linha de datação:
+
+```html
+<p class="datacao">O destaque no terceiro parágrafo é meu.</p>
+```
+
 ### Notas de rodapé
 
 Funcionam nativamente (kramdown). No corpo do texto:
