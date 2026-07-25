@@ -200,19 +200,33 @@ compartilhado do que sobre o que está sendo lido.
 ## Assinatura por e-mail
 
 O site é estático e não recebe cadastro: um formulário precisa de servidor para
-gravar o endereço. Então a lista mora no **Buttondown**, que vigia o `feed.xml` e
-dispara o e-mail quando aparece texto novo. Escrever e dar push continua sendo
-tudo o que você faz.
+gravar o endereço. Então a lista mora no **Buttondown**, conta
+`singelasreferencias`, e o formulário do rodapé entrega o endereço direto lá.
+Nenhum e-mail de leitor passa por este repositório.
 
-1. Crie a conta em `buttondown.com` e anote o nome de usuário.
-2. Ponha esse nome no `_config.yml`, em `buttondown:`.
-3. Lá, em **Settings → RSS-to-email** (ou equivalente), aponte para
-   `https://singelasreferencias.com.br/feed.xml`.
-4. Configure SPF e DKIM no Registro.br com os valores que o Buttondown fornecer,
-   para o e-mail sair como `@singelasreferencias.com.br` sem cair em spam. Sem
-   isso, dá para começar remetendo pelo domínio deles.
+Com `buttondown:` vazio no `_config.yml`, o formulário não aparece e o site fica
+como estava.
 
-Com `buttondown:` vazio, o formulário não aparece e o site fica como estava.
+### O envio é manual
+
+O Buttondown cobra US$ 9 por mês pelo disparo automático a partir do RSS, e o
+plano gratuito, de 100 assinantes, não o inclui. Fica manual, porque a automação
+aqui pouparia pouco: o que vai para o assinante é o título, o resumo de uma frase
+que o cabeçalho do texto já traz e o link.
+
+Depois do push, abra o Buttondown, cole essas três linhas e envie. É também a
+chance de decidir quais textos merecem interromper a caixa de entrada de alguém:
+nem todo texto de acervo precisa virar aviso.
+
+Se um dia a frequência crescer e os dois minutos virarem atrito, assinar o
+adicional resolve e nada muda neste repositório.
+
+### Remetente
+
+Para o e-mail sair como `@singelasreferencias.com.br` em vez do domínio do
+Buttondown, publique no Registro.br os registros SPF e DKIM que eles fornecem.
+É a mesma operação do TXT de verificação do Search Console. Sem isso funciona
+igual, só que remetido por eles.
 
 ### O feed leva o resumo, não o texto
 

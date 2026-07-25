@@ -18,7 +18,7 @@ goatcounter: "singelas"
 
 # Lista de e-mail. Só o nome de usuário na conta do Buttondown, sem o resto do
 # endereço. Vazio significa nenhum formulário na página.
-buttondown: ""
+buttondown: "singelasreferencias"
 
 markdown: kramdown
 kramdown:
