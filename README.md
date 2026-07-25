@@ -158,6 +158,38 @@ por escrito — e guarde o e-mail.
 Atenção às **traduções**: o prazo conta a partir da morte do tradutor, não do autor.
 Um original em domínio público pode ter tradução protegida.
 
+## Estatísticas
+
+O GitHub Pages não informa nada sobre quem lê. Não há log de servidor, e o painel
+do repositório conta visita ao código, não ao site. Os números vêm de dois lugares,
+que respondem a perguntas diferentes:
+
+**Search Console** (Google) e **Bing Webmaster Tools** dizem por quais buscas as
+pessoas chegam, quantas vezes o site apareceu e o que foi indexado. Não exigem
+nenhum código na página, só a prova de que o domínio é seu:
+
+1. Em `search.google.com/search-console`, escolha **Domínio** e digite
+   `singelasreferencias.com.br`.
+2. Copie o registro TXT que ele mostrar.
+3. No Registro.br, em **Editar zona DNS**, crie o TXT com esse valor.
+4. Volte e confirme. A propagação leva de minutos a algumas horas.
+
+**GoatCounter** conta quantas vezes cada texto foi aberto. Gratuito para uso
+pessoal, código aberto, uns 3 KB de script. Não grava cookie nem identificador,
+e é por isso que o site não precisa de banner de consentimento:
+
+1. Crie a conta em `goatcounter.com`, escolhendo um código de site.
+2. Ponha esse código no `_config.yml`, em `goatcounter:`.
+3. Push. O `_includes/analytics.html` cuida do resto.
+
+Com `goatcounter:` vazio, nenhum script é carregado. O contador também não roda em
+`jekyll serve` local, senão cada revisão sua entraria na conta como leitor.
+
+Duas coisas que os números não mostram. **Quem lê pelo RSS nunca aparece**, porque
+leitor de feed não executa JavaScript. E **os primeiros meses são ruído**: num site
+com poucos textos, a variação semanal diz mais sobre o acaso de um link
+compartilhado do que sobre o que está sendo lido.
+
 ## Rodar localmente (opcional)
 
 Precisa de Ruby. Não é obrigatório — dá para escrever e dar push direto, e conferir
@@ -176,6 +208,7 @@ Depois: `http://localhost:4000`.
 _config.yml                título, tagline, rótulos, meses em português
 _layouts/default.html      moldura do site
 _layouts/post.html         página de texto + nota de autor no rodapé
+_includes/analytics.html   contador de visitas, só em produção
 index.html                 lista da home
 sobre.md                   a nota de autor, versão longa
 assets/css/style.css       tudo — sem framework, sem build

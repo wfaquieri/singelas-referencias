@@ -1,0 +1,12 @@
+{%- comment -%}
+Contador de visitas (GoatCounter). Sai do ar sozinho em duas situações, e as duas
+são de propósito:
+
+- `site.goatcounter` vazio no _config.yml: nada é carregado. O site funciona igual.
+- fora de produção: `jekyll serve` local não conta como visita, senão toda revisão
+  de texto sua vira leitor no gráfico. O GitHub Pages compila em produção.
+{%- endcomment -%}
+{%- if site.goatcounter and site.goatcounter != "" and jekyll.environment == "production" -%}
+<script data-goatcounter="https://{{ site.goatcounter }}.goatcounter.com/count"
+        async src="https://gc.zgo.at/count.js"></script>
+{%- endif -%}

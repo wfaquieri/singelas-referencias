@@ -11,6 +11,11 @@ baseurl: ""
 
 permalink: /:year/:month/:title/
 
+# Contador de visitas. Só o nome do site na conta do GoatCounter, sem o resto do
+# endereço: se a conta é "singelas.goatcounter.com", aqui vai só "singelas".
+# Vazio significa nenhum contador na página.
+goatcounter: "singelas"
+
 markdown: kramdown
 kramdown:
   footnote_backlink: "↩"
