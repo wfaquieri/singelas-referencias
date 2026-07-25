@@ -1,8 +1,9 @@
 # Singelas Referências
 
-Site estático (Jekyll) para GitHub Pages. Sem tema de terceiro, sem plugin além do
-`jekyll-feed`. Nada aqui precisa de atualização de segurança porque nada aqui roda:
-o GitHub gera HTML no push e serve arquivo parado.
+Site estático (Jekyll) para GitHub Pages. Sem tema de terceiro. Os dois únicos
+plugins, `jekyll-feed` e `jekyll-sitemap`, rodam na compilação e geram um arquivo
+cada, o `feed.xml` e o `sitemap.xml`. Nada aqui precisa de atualização de segurança
+porque nada aqui roda: o GitHub gera HTML no push e serve arquivo parado.
 
 ## Publicar
 
@@ -173,6 +174,12 @@ nenhum código na página, só a prova de que o domínio é seu:
 2. Copie o registro TXT que ele mostrar.
 3. No Registro.br, em **Editar zona DNS**, crie o TXT com esse valor.
 4. Volte e confirme. A propagação leva de minutos a algumas horas.
+5. Verificado, vá em **Sitemaps** e envie `sitemap.xml`.
+
+O `sitemap.xml` é gerado pelo `jekyll-sitemap` a cada compilação, com todos os
+textos. Ele não faz nada subir no ranking. Serve para entregar ao Google a lista
+completa de endereços, o que torna útil o relatório de páginas do Search Console:
+sem ela, não há com o que comparar o que foi indexado.
 
 **GoatCounter** conta quantas vezes cada texto foi aberto. Gratuito para uso
 pessoal, código aberto, uns 3 KB de script. Não grava cookie nem identificador,
