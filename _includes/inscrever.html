@@ -1,0 +1,29 @@
+{%- comment -%}
+Formulário de assinatura (Buttondown). Some sozinho se `site.buttondown` estiver
+vazio no _config.yml.
+
+Não há JavaScript aqui. O formulário do Buttondown vem com um `onsubmit` que abre
+uma janela pop-up; ele foi retirado. Sem ele, o navegador faz o POST e leva o
+leitor à página de confirmação do Buttondown, que é uma tela a mais mas não
+depende de script nem de pop-up liberado.
+
+Quem gera o e-mail é o próprio Buttondown, lendo o feed.xml. Nada neste
+repositório dispara envio, e nenhum endereço de leitor passa por aqui.
+{%- endcomment -%}
+{%- if site.buttondown and site.buttondown != "" -%}
+<section class="inscrever">
+  <p class="inscrever-chamada">Receber os textos novos por e-mail</p>
+  <form class="inscrever-form"
+        action="https://buttondown.com/api/emails/embed-subscribe/{{ site.buttondown }}"
+        method="post">
+    <label class="visualmente-oculto" for="bd-email">Seu endereço de e-mail</label>
+    <input type="email" name="email" id="bd-email" placeholder="seu@email" required>
+    <button type="submit">Assinar</button>
+  </form>
+  <p class="inscrever-nota">
+    Um aviso a cada texto novo, com o resumo e o link. Nada mais, e o
+    cancelamento fica em todo e-mail. Quem prefere leitor de feed tem o
+    <a href="{{ '/feed.xml' | relative_url }}">RSS</a>.
+  </p>
+</section>
+{%- endif -%}

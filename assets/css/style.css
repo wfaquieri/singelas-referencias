@@ -463,6 +463,79 @@ a.reversefootnote { text-decoration: none; }
 .post-nav a:hover { color: var(--realce); }
 .post-nav .next { margin-left: auto; text-align: right; }
 
+/* ---------- assinatura por e-mail ---------- */
+
+.inscrever {
+  max-width: var(--medida);
+  margin: 5rem auto 0;
+  padding-top: 2rem;
+  border-top: 1px solid var(--tenue);
+  text-align: center;
+}
+
+.inscrever-chamada {
+  margin: 0 0 1rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--suave);
+}
+
+.inscrever-form {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.inscrever-form input,
+.inscrever-form button {
+  font: inherit;
+  font-size: 0.95rem;
+  padding: 0.5rem 0.75rem;
+  background: transparent;
+  color: var(--texto);
+  border: 1px solid var(--tenue);
+  border-radius: 0;
+}
+
+.inscrever-form input {
+  flex: 1 1 18rem;
+  min-width: 0;
+}
+
+.inscrever-form input::placeholder { color: var(--suave); opacity: 1; }
+.inscrever-form input:focus { outline: none; border-color: var(--realce); }
+
+.inscrever-form button {
+  flex: 0 0 auto;
+  cursor: pointer;
+  color: var(--suave);
+}
+
+.inscrever-form button:hover { color: var(--realce); border-color: var(--realce); }
+
+.inscrever-nota {
+  margin: 1rem 0 0;
+  color: var(--suave);
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+/* O rodapé já traz a própria linha divisória; sem isto, as duas se encostam. */
+.inscrever + .site-footer { margin-top: 2.5rem; }
+
+/* Rótulo que existe para o leitor de tela, não para o olho. */
+.visualmente-oculto {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 /* ---------- rodapé do site ---------- */
 
 .site-footer {
@@ -479,4 +552,5 @@ a.reversefootnote { text-decoration: none; }
   body { font-size: 1.05rem; }
   .post-title, .pagina h1 { font-size: 1.6rem; }
   .site-header { padding-top: 2.5rem; }
+  .inscrever-form { flex-direction: column; }
 }

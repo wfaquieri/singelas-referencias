@@ -16,6 +16,10 @@ permalink: /:year/:month/:title/
 # Vazio significa nenhum contador na página.
 goatcounter: "singelas"
 
+# Lista de e-mail. Só o nome de usuário na conta do Buttondown, sem o resto do
+# endereço. Vazio significa nenhum formulário na página.
+buttondown: ""
+
 markdown: kramdown
 kramdown:
   footnote_backlink: "↩"
@@ -27,6 +31,11 @@ plugins:
 
 feed:
   path: feed.xml
+  # O feed leva o resumo e o link, não o texto inteiro. Fora da página, duas
+  # coisas quebram: as notas de rodapé apontam para âncoras que só existem aqui,
+  # e a caixa de comentário perde a borda que a separa da citação, de modo que o
+  # leitor deixa de saber quem está falando.
+  excerpt_only: true
 
 meses:
   - janeiro

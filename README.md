@@ -197,6 +197,38 @@ leitor de feed não executa JavaScript. E **os primeiros meses são ruído**: nu
 com poucos textos, a variação semanal diz mais sobre o acaso de um link
 compartilhado do que sobre o que está sendo lido.
 
+## Assinatura por e-mail
+
+O site é estático e não recebe cadastro: um formulário precisa de servidor para
+gravar o endereço. Então a lista mora no **Buttondown**, que vigia o `feed.xml` e
+dispara o e-mail quando aparece texto novo. Escrever e dar push continua sendo
+tudo o que você faz.
+
+1. Crie a conta em `buttondown.com` e anote o nome de usuário.
+2. Ponha esse nome no `_config.yml`, em `buttondown:`.
+3. Lá, em **Settings → RSS-to-email** (ou equivalente), aponte para
+   `https://singelasreferencias.com.br/feed.xml`.
+4. Configure SPF e DKIM no Registro.br com os valores que o Buttondown fornecer,
+   para o e-mail sair como `@singelasreferencias.com.br` sem cair em spam. Sem
+   isso, dá para começar remetendo pelo domínio deles.
+
+Com `buttondown:` vazio, o formulário não aparece e o site fica como estava.
+
+### O feed leva o resumo, não o texto
+
+`excerpt_only: true` no `_config.yml`. O que vai é o `description:` do cabeçalho,
+aquela frase que você já escreve à mão, mais o link.
+
+O motivo é que o texto integral se desmancha fora da página. As notas de rodapé
+viram `href="#fn:1"`, âncoras que só existem aqui e que, num e-mail, não levam a
+lugar nenhum. E a caixa de comentário viaja sem o CSS, de modo que o comentário
+seu e a citação do outro autor chegam como dois blocos iguais. Como é a página
+que resolve o "quem fala onde", mandar o texto para fora dela é mandar a metade
+que não se explica sozinha.
+
+Isso vale também para quem lê por RSS, que perde o texto integral no leitor de
+feed. É o preço da mesma escolha, e reverter é apagar uma linha.
+
 ## Rodar localmente (opcional)
 
 Precisa de Ruby. Não é obrigatório — dá para escrever e dar push direto, e conferir
@@ -216,6 +248,7 @@ _config.yml                título, tagline, rótulos, meses em português
 _layouts/default.html      moldura do site
 _layouts/post.html         página de texto + nota de autor no rodapé
 _includes/analytics.html   contador de visitas, só em produção
+_includes/inscrever.html   formulário da lista de e-mail
 index.html                 lista da home
 sobre.md                   a nota de autor, versão longa
 assets/css/style.css       tudo — sem framework, sem build
