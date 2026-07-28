@@ -444,9 +444,10 @@ a:hover { text-decoration-color: var(--realce); }
   height: var(--altura);
   padding: 0.9rem 0.3rem;
   border: 1px solid var(--tenue);
+  background-color: var(--capa, transparent);
   /* O vinco claro de um lado e a sombra do outro é o que faz o retângulo
      parecer um objeto de pé, e não um traço no papel. */
-  background:
+  background-image:
     linear-gradient(to right,
       rgba(230, 227, 220, 0.05) 0 2px,
       transparent 2px calc(100% - 6px),
@@ -459,6 +460,22 @@ a:hover { text-decoration-color: var(--realce); }
   transition: transform 0.18s ease, border-color 0.18s ease;
 }
 
+/* Seis tons de capa, revezando ao longo da fileira. São cores de encadernação
+   antiga — musgo, vinho, noite, ocre, ardósia, terracota — e todas escuras de
+   propósito: a página é escura, e cor viva aqui viraria brinquedo no meio de um
+   lugar sóbrio. O que elas fazem é separar um volume do vizinho.
+
+   A cor vem da posição na prateleira, não da obra: não quer dizer nada, e não
+   há legenda a decorar. Muda quando um livro novo entra na frente de outro, e
+   isso é aceitável justamente porque não significa coisa alguma. */
+
+.vao:nth-child(6n + 1) .livro { --capa: #2c3730; }
+.vao:nth-child(6n + 2) .livro { --capa: #3a2827; }
+.vao:nth-child(6n + 3) .livro { --capa: #262f3a; }
+.vao:nth-child(6n + 4) .livro { --capa: #383021; }
+.vao:nth-child(6n + 5) .livro { --capa: #2e2e33; }
+.vao:nth-child(6n + 6) .livro { --capa: #3a2b23; }
+
 .livro-titulo,
 .livro-autor {
   overflow: hidden;
@@ -467,7 +484,11 @@ a:hover { text-decoration-color: var(--realce); }
 }
 
 .livro-titulo { font-size: 0.8rem; letter-spacing: 0.01em; }
-.livro-autor { color: var(--suave); font-size: 0.68rem; }
+/* Um degrau mais claro que o --suave do resto do site. O nome do autor é miúdo
+   e agora fica sobre a capa colorida, e não sobre o fundo da página: no --suave
+   ele caía para 4,05 de contraste sobre a capa mais clara, abaixo do mínimo
+   legível. Aqui o pior caso é 5,42. */
+.livro-autor { color: #b0aba1; font-size: 0.68rem; }
 
 .livro:hover { border-color: var(--realce); }
 .livro:hover .livro-titulo { color: var(--realce); }
