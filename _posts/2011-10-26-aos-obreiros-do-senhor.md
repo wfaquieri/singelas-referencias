@@ -7,6 +7,7 @@ resumo: "Vinícius sobre a vaidade de quem se julga indispensável."
 description: "Trecho de Na Seara do Mestre, de Vinícius, sobre a desproporção entre a tarefa que nos cabe e a obra inteira, e o perigo do personalismo no trabalho espírita."
 autores: ["Vinícius"]
 temas: ["moral"]
+obras: ["na-seara-do-mestre"]
 ---
 
 > Constitui funesto erro o supor-nos senhores e detentores da obra ingente e sobre-humana da regeneração social, ou seja, da redenção das almas aqui encarnadas.

@@ -6,6 +6,7 @@ resumo: "Onde Paulo e Estêvão foi recebido, e quem estava na sala."
 description: "As reuniões do Culto do Evangelho no Lar da família Joviano, em Pedro Leopoldo, e os personagens de Cinquenta Anos Depois e Renúncia que se sentavam à mesa."
 autores: ["Emmanuel"]
 temas: ["mediunidade"]
+obras: ["amor-e-sabedoria-de-emmanuel"]
 ---
 
 <p class="lead">Uma sala de fazenda em Pedro Leopoldo, um caderno, três ou quatro pessoas. Foi assim que chegaram alguns dos livros mais lidos da literatura espírita.</p>

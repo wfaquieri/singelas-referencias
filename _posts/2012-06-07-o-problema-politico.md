@@ -7,6 +7,7 @@ resumo: "Léon Denis sobre democracia, coletivismo e a igualdade de direito que 
 description: "Trecho de O Grande Enigma, de Léon Denis, sobre o problema político, o coletivismo e a fraternidade como contrapeso da liberdade."
 autores: ["Léon Denis"]
 temas: ["política", "ciência"]
+obras: ["o-grande-enigma"]
 ---
 
 > O problema político não oferece menor gravidade. Sob a pressão dos acontecimentos, a maior parte das instituições monárquicas desmoronam-se, e a democracia triunfante estendeu-se sobre suas ruínas; em seu seio, porém, surgiu uma crise intensa. Crescem e espalham-se os elementos da anarquia. Os destinos da ciência materialista e os do Socialismo atual estão em correlação; inspiram-se pelos mesmos métodos e pelas mesmas fórmulas.

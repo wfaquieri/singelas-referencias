@@ -7,6 +7,7 @@ resumo: "Kardec sobre a teoria que só veio depois dos fatos."
 description: "Trecho do capítulo I de A Gênese, de Allan Kardec, sobre o Espiritismo como ciência de observação, com epígrafe de Sherlock Holmes sobre o erro de teorizar antes de ter os fatos."
 autores: ["Allan Kardec"]
 temas: ["método", "ciência"]
+obras: ["a-genese"]
 ---
 
 > "É um erro crasso teorizar antes de ter os fatos. Imperceptivelmente, começamos a distorcer os fatos para adaptá-los à teoria, em vez de buscar teorias que se apliquem aos fatos."

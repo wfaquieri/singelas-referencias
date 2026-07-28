@@ -7,6 +7,7 @@ resumo: "Rui Barbosa sobre madrugar no ler e madrugar no pensar."
 description: "Trecho da Oração aos Moços, de Rui Barbosa, sobre o hábito de madrugar e a diferença entre absorver ciência alheia e gerar ideias próprias."
 autores: ["Rui Barbosa"]
 temas: ["estudo", "método"]
+obras: ["oracao-aos-mocos"]
 ---
 
 > Ao que devo, sim, o mais dos frutos do meu trabalho, a relativa exuberância de sua fertilidade, a parte produtiva e durável da sua safra, é às minhas madrugadas. Menino ainda, assim que entrei ao colégio, alvidrei eu mesmo a conveniência desse costume, e daí avante o observei, sem cessar, toda a vida. Eduquei nele o meu cérebro, a ponto de espertar exatamente à hora que comigo mesmo assentava ao dormir. Sucedia, muito amiúde, encetar eu a minha solitária banca de estudo à uma ou duas da antemanhã. Muitas vezes me mandava logo após à cama, daquelas amadas lucubrações, as de que me lembro com saudade mais deleitosa e estranhável.

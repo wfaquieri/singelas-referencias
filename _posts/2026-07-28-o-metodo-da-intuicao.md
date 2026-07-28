@@ -1,12 +1,13 @@
 ---
 layout: post
 title: "O método da intuição"
-date: 2026-07-23
+date: 2026-07-28
 fonte: "Pietro Ubaldi, <em>As Noúres</em> (1935), cap. II, trad. Clóvis Tavares, 5ª ed., 2001"
 resumo: "Pietro Ubaldi sobre as condições em que recebeu A Grande Síntese."
 description: "Trecho do capítulo II de As Noúres, de Pietro Ubaldi, sobre o método que ele repetiu ao longo de quatro verões, de 1932 a 1935, para receber A Grande Síntese: o ambiente, a hora, a música e os estados de consciência da recepção."
 autores: ["Pietro Ubaldi"]
 temas: ["mediunidade", "método"]
+obras: ["as-noures"]
 ---
 
 > Abaixemos, portanto, as luzes e entremos no Templo do pensamento. Vamos penetrar num mundo de vibrações delicadas, de formas fugidias, que o pensamento cria e destrói, mundo de fenômenos evanescentes e sutis e, no entanto, reais.

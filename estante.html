@@ -1,0 +1,176 @@
+---
+layout: default
+title: Estante
+permalink: /estante/
+description: "As obras citadas no Singelas Referências, uma lombada para cada livro. Clique numa lombada para ver os textos que saíram dela."
+---
+
+{% comment %}
+  A estante é o índice pela origem, e não pelo assunto: o grafo mostra o que
+  liga um texto a outro, a estante mostra de que livro cada texto saiu.
+
+  Duas fontes: o `_data/estante.yml` guarda os livros, na ordem em que ficam na
+  prateleira, e o campo `obras:` do cabeçalho de cada texto diz de qual deles o
+  texto saiu. Livro sem texto nenhum não vira lombada — a estante mostra o que
+  foi lido aqui, não o que existe na sala.
+
+  A página inteira funciona sem JavaScript: as lombadas são âncoras e as fichas
+  estão todas na página. O JavaScript apenas fecha as fichas e abre uma por vez,
+  no lugar em que o leitor já está olhando.
+{% endcomment %}
+
+<div class="pagina pagina-larga">
+
+<h1>Estante</h1>
+
+<p class="lead">Cada texto daqui saiu de algum livro. Esta é a prateleira desses livros: a lombada mais grossa é a da obra que voltou mais vezes.</p>
+
+<div class="estante" id="estante">
+
+<ul class="prateleira">
+{% for obra in site.data.estante %}
+  {% assign slug = obra.slug %}
+  {% assign textos = site.posts | where_exp: "p", "p.obras contains slug" %}
+  {% if textos.size > 0 %}
+
+    {% comment %}
+      A espessura da lombada é o número de textos: é a única medida daqui que
+      quer dizer alguma coisa, e é ela que engrossa sozinha à medida que uma
+      obra volta. A altura vem do tamanho do título, e não significa nada —
+      existe para a prateleira não sair parecendo um pente. Sendo o título
+      sempre o mesmo, a altura também é, e a estante não muda de desenho a cada
+      compilação.
+    {% endcomment %}
+    {% assign degrau = obra.titulo | size | modulo: 6 %}
+    {% assign altura = degrau | times: 0.46 | plus: 8.5 %}
+    {% assign espessura = textos.size | minus: 1 | times: 0.6 | plus: 1.95 %}
+    {% if espessura > 4.5 %}{% assign espessura = 4.5 %}{% endif %}
+
+    <li class="vao">
+      <a class="livro"
+         href="#obra-{{ slug }}"
+         data-obra="{{ slug }}"
+         style="--altura: {{ altura }}rem; --espessura: {{ espessura }}rem"
+         title="{{ obra.titulo }}{% if obra.autor %}, de {{ obra.autor }}{% endif %} — {{ textos.size }} texto{% if textos.size > 1 %}s{% endif %}">
+        <span class="livro-titulo">{{ obra.titulo }}</span>
+        {% if obra.autor %}<span class="livro-autor">{{ obra.autor }}</span>{% endif %}
+      </a>
+    </li>
+
+  {% endif %}
+{% endfor %}
+</ul>
+
+<p class="estante-instrucao" id="estante-instrucao">Clique numa lombada para ver os textos que saíram dela.</p>
+
+<noscript>
+  <p class="estante-aviso">Sem JavaScript as fichas ficam todas abertas, abaixo. É a mesma informação.</p>
+</noscript>
+
+<div class="fichas">
+{% for obra in site.data.estante %}
+  {% assign slug = obra.slug %}
+  {% assign textos = site.posts | where_exp: "p", "p.obras contains slug" %}
+  {% if textos.size > 0 %}
+
+  <article class="ficha" id="obra-{{ slug }}">
+    <h2 class="ficha-titulo">{{ obra.titulo }}</h2>
+    <p class="ficha-meta">
+      {%- if obra.autor %}{{ obra.autor }}{% endif -%}
+      {%- if obra.ano %} · {{ obra.ano }}{% endif -%}
+      {%- if obra.nota %} · {{ obra.nota }}{% endif -%}
+    </p>
+
+    <ul class="lista ficha-textos">
+    {% for post in textos %}
+      {% assign m = post.date | date: "%-m" | minus: 1 %}
+      <li class="lista-item">
+        <p class="lista-meta">
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d" }} de {{ site.meses[m] }} de {{ post.date | date: "%Y" }}</time>
+        </p>
+        <h3 class="lista-titulo"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        {% if post.resumo %}<p class="lista-resumo">{{ post.resumo }}</p>{% endif %}
+      </li>
+    {% endfor %}
+    </ul>
+  </article>
+
+  {% endif %}
+{% endfor %}
+</div>
+
+</div>
+
+{% comment %}
+  Texto que não declara obra nenhuma. Hoje não há nenhum, mas o dia em que
+  houver — um texto inteiramente seu, ou um `obras:` esquecido — ele aparece
+  aqui em vez de sumir sem aviso.
+{% endcomment %}
+{% assign soltos = site.posts | where_exp: "p", "p.obras == nil" %}
+{% if soltos.size > 0 %}
+<h2>Fora da estante</h2>
+<p class="estante-soltos">
+{% for post in soltos %}<a href="{{ post.url | relative_url }}">{{ post.title }}</a>{% unless forloop.last %} · {% endunless %}{% endfor %}
+</p>
+{% endif %}
+
+</div>
+
+<script>
+(function () {
+  var quadro = document.getElementById('estante');
+  if (!quadro) return;
+
+  var instrucao = document.getElementById('estante-instrucao');
+  var lombadas = quadro.querySelectorAll('.livro');
+  var fichas = quadro.querySelectorAll('.ficha');
+  if (!lombadas.length) return;
+
+  // A classe entra por JavaScript, e não no HTML: é ela que esconde as fichas.
+  // Escrita à mão, esconderia as fichas também de quem não tem JavaScript, e a
+  // página ficaria sendo uma prateleira que não abre.
+  quadro.classList.add('com-js');
+
+  function abrir(slug, rolar) {
+    var achou = false;
+    for (var i = 0; i < fichas.length; i++) {
+      var e = fichas[i].id === 'obra-' + slug;
+      fichas[i].classList.toggle('aberta', e);
+      if (e) achou = true;
+    }
+    for (var j = 0; j < lombadas.length; j++) {
+      var sel = lombadas[j].getAttribute('data-obra') === slug;
+      lombadas[j].classList.toggle('puxado', sel);
+      // aria-current diz ao leitor de tela qual lombada está aberta; sem isso
+      // o destaque existe só para quem enxerga.
+      if (sel) { lombadas[j].setAttribute('aria-current', 'true'); }
+      else { lombadas[j].removeAttribute('aria-current'); }
+    }
+    if (achou && instrucao) instrucao.hidden = true;
+    if (achou && rolar) {
+      // Só rola quando o leitor chegou por link direto: a ficha nasce logo
+      // abaixo da prateleira, e rolar a cada clique faria a página pular sem
+      // motivo.
+      quadro.scrollIntoView({ block: 'start' });
+    }
+    return achou;
+  }
+
+  for (var k = 0; k < lombadas.length; k++) {
+    lombadas[k].addEventListener('click', function (ev) {
+      ev.preventDefault();
+      var slug = this.getAttribute('data-obra');
+      abrir(slug, false);
+      // replaceState, e não pushState: o endereço fica compartilhável sem
+      // encher o histórico de um passo a cada lombada tocada.
+      if (window.history && history.replaceState) {
+        history.replaceState(null, '', '#obra-' + slug);
+      }
+    });
+  }
+
+  // Chegada por link direto, do tipo /estante/#obra-as-noures.
+  var inicial = (window.location.hash || '').replace(/^#obra-/, '');
+  if (inicial) abrir(inicial, true);
+})();
+</script>

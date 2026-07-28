@@ -402,6 +402,136 @@ a:hover { text-decoration-color: var(--realce); }
   font-weight: 600;
 }
 
+/* ---------- estante ---------- */
+/* Livros em pé numa prateleira. A espessura de cada lombada vem do número de
+   textos, medida que o Liquid calcula e entrega em --espessura; a altura vem do
+   tamanho do título e é só variedade, para a fileira não sair parecendo pente. */
+
+.estante { margin-top: 2.5rem; }
+
+.prateleira {
+  --linha: 12.5rem;   /* altura de uma fileira, do topo à tábua de baixo */
+  --tabua: 1.6rem;    /* ar entre a tábua e a fileira seguinte */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  /* A tábua não é borda de elemento nenhum: é uma listra pintada no fundo, que
+     se repete a cada fileira. Assim a prateleira ganha uma tábua nova sozinha
+     quando os livros passam a caber em duas linhas, sem marcação a mais. */
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent 0 calc(var(--linha) - var(--tabua) - 2px),
+    var(--tenue) calc(var(--linha) - var(--tabua) - 2px) calc(var(--linha) - var(--tabua)),
+    transparent calc(var(--linha) - var(--tabua)) var(--linha)
+  );
+}
+
+.vao {
+  display: flex;
+  align-items: flex-end;
+  height: var(--linha);
+  padding: 0 1px var(--tabua);
+}
+
+.livro {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: var(--espessura);
+  height: var(--altura);
+  padding: 0.9rem 0.3rem;
+  border: 1px solid var(--tenue);
+  /* O vinco claro de um lado e a sombra do outro é o que faz o retângulo
+     parecer um objeto de pé, e não um traço no papel. */
+  background:
+    linear-gradient(to right,
+      rgba(230, 227, 220, 0.05) 0 2px,
+      transparent 2px calc(100% - 6px),
+      rgba(0, 0, 0, 0.28) calc(100% - 6px) 100%);
+  /* Texto de verdade virado, e não imagem nem transformação: continua sendo
+     selecionável, pesquisável na página e legível por leitor de tela. De cima
+     para baixo, como se lê lombada de livro brasileiro. */
+  writing-mode: vertical-rl;
+  text-decoration: none;
+  transition: transform 0.18s ease, border-color 0.18s ease;
+}
+
+.livro-titulo,
+.livro-autor {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.livro-titulo { font-size: 0.8rem; letter-spacing: 0.01em; }
+.livro-autor { color: var(--suave); font-size: 0.68rem; }
+
+.livro:hover { border-color: var(--realce); }
+.livro:hover .livro-titulo { color: var(--realce); }
+.livro:focus-visible { outline: 1px solid var(--realce); outline-offset: 2px; }
+
+/* O livro escolhido sai um dedo para fora da fileira, como quem puxa um volume
+   da estante antes de abrir. */
+.livro.puxado {
+  transform: translateY(-0.6rem);
+  border-color: var(--realce);
+}
+
+.livro.puxado .livro-titulo { color: var(--realce); }
+
+.estante-instrucao,
+.estante-aviso {
+  margin: 1.25rem 0 0;
+  color: var(--suave);
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+/* Sem JavaScript as fichas ficam todas abertas — a página vira um índice por
+   obra, que é a mesma informação em outra forma. Com JavaScript, uma por vez. */
+.com-js .ficha { display: none; }
+.com-js .ficha.aberta { display: block; }
+
+.ficha {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--tenue);
+}
+
+.ficha-titulo {
+  margin: 0;
+  font-size: 1.35rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.ficha-meta {
+  margin: 0.35rem 0 0;
+  color: var(--suave);
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.ficha-textos { margin: 0.5rem 0 0; }
+.ficha-textos .lista-item { padding: 1.25rem 0; }
+.ficha-textos .lista-item:first-child { border-top: 0; }
+
+.estante-soltos { color: var(--suave); font-size: 0.95rem; }
+.estante-soltos a { color: var(--texto); text-decoration: none; }
+.estante-soltos a:hover { color: var(--realce); }
+
+@media (prefers-reduced-motion: reduce) {
+  .livro { transition: none; }
+}
+
+@media (max-width: 34rem) {
+  .prateleira { --linha: 11rem; --tabua: 1.2rem; }
+  .livro { height: min(var(--altura), 9rem); }
+}
+
 /* ---------- notas de rodapé ---------- */
 
 .footnotes {

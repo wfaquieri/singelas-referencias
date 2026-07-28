@@ -1,0 +1,90 @@
+# A estante. Cada item vira uma lombada em /estante/, e a ordem daqui é a ordem
+# em que os livros aparecem na prateleira — arrumados por autor, como se arruma
+# estante de verdade. Para mudar a arrumação, mude a ordem deste arquivo.
+#
+# O que liga o livro ao texto é o campo `obras:` no cabeçalho de cada texto, que
+# guarda o `slug` de uma obra daqui. Slug errado não dá erro de compilação: o
+# texto simplesmente não aparece em lombada nenhuma.
+#
+# Campos: slug e titulo são obrigatórios; autor, ano e nota entram quando houver.
+# `nota` é para o que não é do autor nem do ano: tradutor, médium, prefaciador.
+
+- slug: o-livro-dos-espiritos
+  titulo: "O Livro dos Espíritos"
+  autor: "Allan Kardec"
+  ano: 1857
+
+- slug: o-que-e-o-espiritismo
+  titulo: "O Que é o Espiritismo"
+  autor: "Allan Kardec"
+  ano: 1859
+
+- slug: a-genese
+  titulo: "A Gênese"
+  autor: "Allan Kardec"
+  ano: 1868
+  nota: "tradução de Guillon Ribeiro"
+
+- slug: amor-e-sabedoria-de-emmanuel
+  titulo: "Amor e Sabedoria de Emmanuel"
+  autor: "Clóvis Tavares"
+
+- slug: vicios-privados-beneficios-publicos
+  titulo: "Vícios privados, benefícios públicos?"
+  autor: "Eduardo Giannetti"
+  ano: 1993
+
+- slug: o-processo-mediunico
+  titulo: "O Processo Mediúnico"
+  autor: "Elias Inácio de Moraes"
+  ano: 2023
+
+- slug: o-consolador
+  titulo: "O Consolador"
+  autor: "Emmanuel"
+  ano: 1940
+  nota: "psicografia de Chico Xavier"
+
+- slug: religiao-dos-espiritos
+  titulo: "Religião dos Espíritos"
+  autor: "Emmanuel"
+  nota: "psicografia de Chico Xavier"
+
+- slug: a-vida-escreve
+  titulo: "A Vida Escreve"
+  autor: "Hilário Silva"
+  nota: "psicografia de Chico Xavier"
+
+- slug: depois-da-morte
+  titulo: "Depois da Morte"
+  autor: "Léon Denis"
+  ano: 1890
+
+- slug: o-grande-enigma
+  titulo: "O Grande Enigma"
+  autor: "Léon Denis"
+  ano: 1911
+
+- slug: alvorada-crista
+  titulo: "Alvorada Cristã"
+  autor: "Neio Lúcio"
+  nota: "psicografia de Chico Xavier; prefácio de Emmanuel"
+
+- slug: yvonne-pereira-uma-heroina-silenciosa
+  titulo: "Yvonne Pereira: uma heroína silenciosa"
+  autor: "Pedro Camilo"
+
+- slug: as-noures
+  titulo: "As Noúres"
+  autor: "Pietro Ubaldi"
+  ano: 1935
+  nota: "tradução de Clóvis Tavares"
+
+- slug: oracao-aos-mocos
+  titulo: "Oração aos Moços"
+  autor: "Rui Barbosa"
+  ano: 1921
+
+- slug: na-seara-do-mestre
+  titulo: "Na Seara do Mestre"
+  autor: "Vinícius"

@@ -69,6 +69,7 @@ resumo: "Uma linha que aparece na home."
 description: "Uma frase para busca e para redes sociais."
 autores: ["Rui Barbosa"]
 temas: ["estudo", "método"]
+obras: ["oracao-aos-mocos"]
 ---
 
 Texto em Markdown.
@@ -115,6 +116,41 @@ O que você tem a dizer sobre o trecho.
 aparece ligado a nada.** Temas em uso: `ciência`, `estudo`, `mediunidade`,
 `método`, `moral`, `política`. Autor só vira nó no grafo quando aparece em dois
 ou mais textos.
+
+### A estante
+
+`obras:` põe o texto numa lombada da página `/estante/`. O valor é o `slug` de
+uma obra do `_data/estante.yml`, e um texto pode citar mais de uma:
+
+```yaml
+obras: ["o-livro-dos-espiritos", "religiao-dos-espiritos"]
+```
+
+Livro que ainda não está no `_data/estante.yml` entra lá primeiro:
+
+```yaml
+- slug: as-noures
+  titulo: "As Noúres"
+  autor: "Pietro Ubaldi"
+  ano: 1935
+  nota: "tradução de Clóvis Tavares"
+```
+
+Só `slug` e `titulo` são obrigatórios. `nota:` é para o que não cabe em autor
+nem em ano: tradutor, médium, prefaciador. A ordem do arquivo é a ordem dos
+livros na prateleira, arrumada por autor — para mudar a arrumação, mude a ordem
+do arquivo.
+
+Duas coisas que a página faz sozinha. A **espessura** da lombada é o número de
+textos, de modo que a obra que volta vai engrossando; e obra sem texto nenhum
+não vira lombada, porque a estante mostra o que foi lido aqui, não o que existe
+na sala.
+
+**Slug errado não dá erro de compilação.** O texto simplesmente não aparece em
+lombada nenhuma, e o site sobe como se nada houvesse. Ao publicar, confira na
+`/estante/` se o texto novo está sob o livro certo. Texto que não declara
+`obras:` aparece na lista "Fora da estante", no pé da página, que existe
+justamente para nada sumir sem aviso.
 
 ### Destacar um trecho dentro da citação
 
@@ -269,11 +305,14 @@ Depois: `http://localhost:4000`.
 
 ```
 _config.yml                título, tagline, rótulos, meses em português
+_data/estante.yml          os livros da estante, na ordem da prateleira
 _layouts/default.html      moldura do site
 _layouts/post.html         página de texto + nota de autor no rodapé
 _includes/analytics.html   contador de visitas, só em produção
 _includes/inscrever.html   formulário da lista de e-mail
 index.html                 lista da home
+estante.html               os textos pela obra de onde saíram
+grafo.html                 os textos pelo que os liga entre si
 sobre.md                   a nota de autor, versão longa
 assets/css/style.css       tudo — sem framework, sem build
 _posts/                    os textos

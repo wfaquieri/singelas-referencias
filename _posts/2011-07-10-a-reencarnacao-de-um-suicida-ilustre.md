@@ -7,6 +7,7 @@ resumo: "Pedro Camilo sobre a volta que Camilo anunciou em 1948."
 description: "Trecho de Yvonne Pereira: uma heroína silenciosa, de Pedro Camilo, sobre Camilo Castelo Branco depois do suicídio de 1890, o Hospital Maria de Nazaré e o anúncio da reencarnação feito em 1948."
 autores: ["Pedro Camilo"]
 temas: ["mediunidade", "moral"]
+obras: ["yvonne-pereira-uma-heroina-silenciosa"]
 ---
 
 > Yvonne Pereira via o espírito de Camilo Castelo Branco desde os seus doze anos, embora não soubesse de quem se tratava. Era um espírito que dela se aproximava na companhia de Roberto e Charles, que foram seus orientadores no Hospital Maria de Nazaré, instituição espiritual dedicada ao atendimento de suicidas e que acolheu o conhecido escritor na vida de além-túmulo.

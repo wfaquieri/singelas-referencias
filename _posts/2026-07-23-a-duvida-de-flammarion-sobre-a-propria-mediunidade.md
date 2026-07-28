@@ -7,6 +7,7 @@ resumo: "Elias Moraes sobre o astrônomo que reviu a própria psicografia."
 description: "Trecho de O Processo Mediúnico, de Elias Inácio de Moraes, sobre Camille Flammarion, médium do capítulo VI de A Gênese, e a conclusão a que ele chegou em 1899 a respeito do próprio trabalho psicográfico."
 autores: ["Elias Moraes"]
 temas: ["mediunidade", "método", "ciência"]
+obras: ["o-processo-mediunico"]
 ---
 
 > No dia 02 de novembro de 1861 o jovem astrônomo Camille Flammarion, com apenas 19 anos de idade, apresentou uma carta a Kardec solicitando autorização para participar da Sociedade Parisiense de Estudos Espíritas. Ele já se interessava pelos fenômenos mediúnicos e estava escrevendo um livro, publicado no ano seguinte, intitulado *Os habitantes do outro mundo – Revelações do além-túmulo*, escrito a partir de comunicações da Srta. Huet.[^1]

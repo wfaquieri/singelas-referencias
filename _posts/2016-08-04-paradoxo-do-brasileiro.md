@@ -7,6 +7,7 @@ resumo: "Giannetti sobre o país que ninguém reconhece como seu."
 description: "Trecho do prefácio de Vícios privados, benefícios públicos?, de Eduardo Giannetti, sobre a distância entre a indignação sincera de cada brasileiro e o resultado coletivo que todos produzem."
 autores: ["Eduardo Giannetti"]
 temas: ["política", "moral"]
+obras: ["vicios-privados-beneficios-publicos"]
 ---
 
 > O paradoxo do brasileiro define uma impossibilidade lógica.
