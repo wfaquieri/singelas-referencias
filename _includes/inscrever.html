@@ -7,8 +7,10 @@ uma janela pop-up; ele foi retirado. Sem ele, o navegador faz o POST e leva o
 leitor à página de confirmação do Buttondown, que é uma tela a mais mas não
 depende de script nem de pop-up liberado.
 
-Quem gera o e-mail é o próprio Buttondown, lendo o feed.xml. Nada neste
-repositório dispara envio, e nenhum endereço de leitor passa por aqui.
+O envio é manual: depois do push, abre-se o Buttondown e cola-se o título, o
+resumo e o link. Ler o feed e disparar sozinho é adicional pago lá, fora do
+plano gratuito — o README explica por que ficou assim. Nada neste repositório
+dispara envio, e nenhum endereço de leitor passa por aqui.
 {%- endcomment -%}
 {%- if site.buttondown and site.buttondown != "" -%}
 <section class="inscrever">
