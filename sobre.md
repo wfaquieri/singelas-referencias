@@ -22,11 +22,4 @@ de Jesus, em Niterói. Currículo completo em
 Contato: <a href="mailto:wfaquieri@gmail.com">wfaquieri@gmail.com</a>.
 </p>
 
-<p class="nota-autor">
-Este site conta quantas vezes cada texto foi aberto, e nada além disso. Não há
-cookie e não há como saber quem você é. Quem assina a lista deixa o endereço de
-e-mail com o serviço que faz o envio; ele serve para avisar de texto novo e para
-mais nada, e o cancelamento fica no rodapé de toda mensagem.
-</p>
-
 </div>
