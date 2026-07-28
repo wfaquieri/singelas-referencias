@@ -77,6 +77,16 @@ Texto em Markdown.
 `fonte:` credita a origem no cabeçalho do texto. Só faz sentido quando há trecho
 de outro autor; num texto inteiramente seu, omita.
 
+`date:` é o dia em que o texto foi publicado, e não o dia em que a nota foi
+escrita. A mesma data vai no nome do arquivo. Os textos de acervo levam data de
+2011 e 2012 porque saíram naquele ano, noutro lugar — não porque a nota seja de
+lá. Rascunho que ficou parado semanas em `_drafts/` entra com a data de hoje.
+
+Cuidado ao corrigir a data de um texto já no ar: o endereço vem do `permalink`,
+que usa ano e mês. Mudar de 23 para 28 de julho não mexe em nada, mas atravessar
+a virada do mês troca a URL e deixa a antiga dando 404, na mão de quem já
+guardou o link.
+
 ### Quem fala onde
 
 Não há categoria separando "texto meu" de "texto dos outros". Houve, e foi
